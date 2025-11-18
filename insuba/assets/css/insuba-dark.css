@@ -1,0 +1,174 @@
+:root {
+  --insuba-text: #6e6b70;
+  --insuba-text-rgb: 110, 107, 112;
+  --insuba-white: #141215;
+  --insuba-white-rgb: 20, 18, 21;
+  --insuba-base: #c2a74e;
+  --insuba-base-rgb: 194, 167, 78;
+  --insuba-black: #fff;
+  --insuba-black-rgb: 255, 255, 255;
+  --insuba-black3: #000;
+  --insuba-black3-rgb: 0, 0, 0;
+  --insuba-black4: #121013;
+  --insuba-black4-rgb: 18, 16, 19;
+  --insuba-text: #1c1a1d;
+  --insuba-text-rgb: 28, 26, 29;
+  --insuba-border-color: #2f2d30;
+  --insuba-border-color-rgb: 47, 45, 48;
+}
+
+.main-slider-one__bg::after {
+  background-image: url(../images/shapes/hero-slider-1-1-dark.png);
+}
+
+.contact-map,
+.opening,
+.blog-one,
+.instagram-one,
+.why-choose-one,
+.testimonials-one,
+.about-one {
+  background-color: var(--insuba-white);
+}
+
+.footer-widget__newsletter button[type=submit]:hover,
+.footer-widget__social a:hover,
+.footer-widget__social a,
+.footer-widget__info li a:hover,
+.footer-widget__links li a:hover,
+.footer-widget__title,
+.cta-two__sub-title,
+.cta-two__title,
+.opening__info,
+.opening__title,
+.opening__icon,
+.blog-card__date,
+.contact__input-box i,
+.contact__input-box .bootstrap-select > .dropdown-toggle::before,
+.contact .sec-title__title,
+.funfact-one__count,
+.funfact-one__text,
+.funfact-one__icon,
+.instagram-one a::before,
+.why-choose-one__list__icon,
+.service-one__item:hover .service-one__item__title,
+.video-two__btn .video-popup,
+.video-two__btn .curved-circle--item span,
+.video-two__title,
+.client-carousel-one .owl-theme .owl-nav button:hover,
+.about-one__image__info__icon,
+.feature-one__item__icon,
+.main-slider-one__title,
+.main-slider-one__sub-title {
+  color: var(--insuba-black);
+}
+
+.main-slider-one__bg::before {
+  background-color: var(--insuba-text);
+  opacity: 0.5;
+}
+
+.about-one__image__info,
+.background-black,
+.cta-two__content .insuba-btn::before,
+.blog-card__content,
+.about-one__content__list li {
+  background-color: var(--insuba-text);
+}
+
+.main-slider-one__carousel.owl-carousel .owl-nav button {
+  background-color: rgba(var(--insuba-black-rgb), 0.1);
+  color: var(--insuba-black);
+}
+
+.main-slider-one circle {
+  stroke: var(--insuba-white);
+}
+
+.main-slider-one__carousel .owl-dots .owl-dot span {
+  border-color: var(--insuba-black);
+}
+
+.cta-two__content .insuba-btn,
+.cta-two__content .insuba-btn::after,
+.blog-card__image__link::before,
+.blog-card__image__link::after,
+.funfact-one__item:not(:first-of-type)::before,
+.main-slider-one__carousel .owl-dots .owl-dot:hover span,
+.main-slider-one__carousel .owl-dots .owl-dot.active span {
+  background-color: var(--insuba-black);
+}
+
+.about-one__flower {
+  background-color: var(--insuba-black4);
+}
+
+.about-one__image__info::after {
+  border-image: linear-gradient(-45deg, rgba(var(--insuba-base-rgb), 1) 0%, rgba(var(--insuba-black3-rgb), 1) 100%) 1;
+}
+
+.client-carousel-one .client-carousel__one__item:hover {
+  background-color: var(--insuba-text);
+}
+
+.contact,
+.contact__bg,
+.video-two__bg,
+.video-two {
+  background-color: var(--insuba-black3);
+}
+
+.instagram-one a::after {
+  background-color: rgba(var(--insuba-black3-rgb), 0.5);
+}
+
+.contact__input-box textarea,
+.contact__input-box input[type=date],
+.contact__input-box input[type=text],
+.contact__input-box input[type=email] {
+  color: var(--insuba-black);
+  border-color: rgba(var(--insuba-black-rgb, 255, 255, 255), 0.15);
+}
+
+.contact__input-box .bootstrap-select > .dropdown-toggle {
+  color: var(--insuba-black) !important;
+}
+
+.contact__input-box .bootstrap-select > .dropdown-toggle {
+  border-color: rgba(var(--insuba-black-rgb, 255, 255, 255), 0.15);
+}
+
+.contact__input-box .bootstrap-select .dropdown-menu > li:hover > a,
+.contact__input-box .bootstrap-select .dropdown-menu > li.selected > a {
+  color: var(--insuba-black);
+}
+
+.blog-card__image__link {
+  background-color: rgba(var(--insuba-text-rgb), 0.5);
+}
+
+.opening__info--last {
+  border-color: rgba(var(--insuba-black-rgb), 0.2);
+}
+
+.main-footer__bottom__inner {
+  border-color: rgba(var(--insuba-black-rgb), 0.2);
+}
+
+.google-map iframe {
+  filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
+.cta-two__thumb__two__thumb,
+.cta-two__thumb__one__thumb {
+  border-color: var(--insuba-black);
+}
+
+.cta-two__content .insuba-btn:hover {
+  color: var(--insuba-white);
+}
+
+.footer-widget__newsletter input[type=text]:focus {
+  color: var(--insuba-text);
+}
+/*# sourceMappingURL=insuba-dark.css.map */
