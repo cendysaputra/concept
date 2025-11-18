@@ -1,0 +1,4237 @@
+/*===============================================
+Template Name: lavewell - Marriage Story HTML5 Template
+Author:  htlavewells://themeforest.net/user/dreamit-solution
+Description: Description
+Version: 1.0.0
+Text Domain: lavewell
+Tags: consulting, finance, corporate, business, consultant, multipurpose, technology, it-solution, software, agency, company, portfolio, bangking, insurance, digital-agency, digital-marketing.
+================================================*/
+
+/*TABLE OF CONTENTS*/
+/*=====================
+01. lavewell Nav Menu Area Css
+02. lavewell slider area css
+03. lavewell service area css
+04. lavewell counter area css
+05. lavewell section title Css
+06. lavewell wedding event area css
+07. lavewell about area css
+08. lavewell best friends area css
+09. lavewell gallery area css
+10. lavewell contact area css
+11. lavewell testimonial-area css
+12. lavewell blog area css
+13. lavewell brand area css
+14. lavewell Footer Area css
+15. lavewell banner area css
+16. lavewell service section css
+17. lavewell about section css
+18. lavewell wishes area css
+19. start lavewell team area css
+20. Start lavewell  Video section css
+21. start lavewell call to action area css
+22. start lavewell breadcumb Area css
+23. start lavewell about us area css
+24. start lavewell about me area css
+25. start lavewell pricing area css
+26. start lavewell team details area css
+27. start lavewell portfolio details css
+28. strt lavewell faq Accordion css
+29. start lavewell blog area 2column css
+30. Start lavewell blog details css
+31. start lavewell service details css
+32. Scroll Up Css 
+33. Curser pointer CSS
+34. lavewellro Loader Css
+=======================*/
+
+/*=====================================
+<-- 01. lavewell Nav Menu Area Css -->
+=======================================*/
+.lavewell_nav_manu {
+  margin: 24px 30px 0 60px;
+  transition: 0.5s;
+}
+
+#sticky-header.lavewell_nav_manu.style-2.lavewell_nav_manu {
+  top: -22px;
+  left: -56px;
+}
+
+.lavewell_nav_manu.style-2.lavewell_nav_manu {
+  margin: 21px 30px 15px 56px;
+  transition: 0.5s;
+}
+
+.sticky {
+  left: 0;
+  margin: auto;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+  background: #050a1e !important;
+  z-index: 500;
+  padding: 0 100px 0;
+  transition: 0.5s !important;
+  z-index: 500;
+  -webkit-animation: 300ms running fadeInDown;
+  animation: 500ms running fadeInUp;
+  animation-name: slideInDown;
+}
+
+.sticky .logo {
+  margin-top: 0;
+}
+
+.sticky.lavewell_nav_manu:before {
+  display: none;
+}
+
+/* lavewell Menu Css*/
+
+nav.lavewell_menu {
+  align-items: center !important;
+  justify-content: center;
+  display: flex;
+}
+
+.lavewell_menu ul {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+}
+
+.lavewell_menu > ul > li {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+.lavewell_menu > ul > li > a {
+  display: block;
+  margin: 23px 26px 23px;
+  -webkit-transition: 0.5s;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Josefin Sans";
+}
+
+nav.lavewell_menu ul li a i {
+  display: inline-block;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+nav.lavewell_menu span {
+  font-size: 13px;
+  padding-left: 6px;
+  font-family: FontAwesome;
+  opacity: 0.5;
+}
+
+.sticky .lavewell_menu > ul > li > a:hover {
+  color: #fff;
+}
+
+.logo {
+  position: relative;
+  top: -3px;
+  z-index: 2;
+}
+
+.lavewell_menu > ul > li > a:hover {
+  color: #f4f4f4;
+}
+
+/*** Sub Menu Style ***/
+.lavewell_menu ul .sub-menu {
+  position: absolute;
+  left: 0;
+  top: 150%;
+  width: 217px;
+  text-align: left;
+  background: #fff;
+  margin: 0;
+  z-index: 1;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  border-bottom: 3px solid #97aa85;
+  border-top: 3px solid #97aa85;
+}
+
+.lavewell_menu ul li:hover > .sub-menu {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  visibility: visible;
+  top: 100%;
+  opacity: 1;
+  z-index: 9999;
+}
+
+.lavewell_menu ul .sub-menu li {
+  position: relative;
+}
+
+.lavewell_menu ul .sub-menu li a {
+  display: block;
+  padding: 12px 20px;
+  margin: 0;
+  line-height: 1.3;
+  letter-spacing: normal;
+  font-size: 13px;
+  font-weight: 500;
+  -webkit-transition: 0.1s;
+  visibility: inherit !important;
+  color: #211e3b !important;
+  text-decoration: none;
+  transition: 0.5s;
+  font-family: "Josefin Sans";
+  text-transform: uppercase;
+}
+
+.lavewell_menu ul .sub-menu li:hover > a,
+.lavewell_menu ul .sub-menu .sub-menu li:hover > a,
+.lavewell_menu ul .sub-menu .sub-menu .sub-menu li:hover > a,
+.lavewell_menu ul .sub-menu .sub-menu .sub-menu .sub-menu li:hover > a {
+  background: #97aa85;
+  color: #fff !important;
+}
+
+/* sub menu 2 */
+
+.lavewell_menu ul .sub-menu .sub-menu {
+  left: 100%;
+  top: 130%;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  visibility: hidden;
+}
+
+.lavewell_menu ul .sub-menu li:hover > .sub-menu {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  visibility: visible;
+  top: 0%;
+}
+
+/* sub menu 3 */
+
+.lavewell_menu ul .sub-menu .sub-menu li {
+  position: relative;
+}
+
+.lavewell_menu ul .sub-menu .sub-menu .sub-menu {
+  right: 100%;
+  left: auto;
+  top: 130%;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  visibility: hidden;
+}
+
+.lavewell_menu ul .sub-menu .sub-menu li:hover > .sub-menu {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  visibility: visible;
+  top: 0%;
+}
+
+/* sub menu 4 */
+
+.lavewell_menu ul .sub-menu .sub-menu .sub-menu li {
+  position: relative;
+}
+
+.lavewell_menu ul .sub-menu .sub-menu .sub-menu li:hover > .sub-menu {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  visibility: visible;
+  top: 0%;
+}
+
+.lavewell_menu li a:hover:before {
+  width: 100%;
+}
+
+.lavewell_nav_manu.sticky .logo_img {
+  display: none;
+}
+
+.main_sticky {
+  display: none;
+}
+
+.lavewell_nav_manu.sticky .main_sticky {
+  display: inherit;
+}
+
+.sticky .lavewell_menu li a {
+  color: #fff;
+}
+
+.lavewell_nav_manu.sticky a.dtbtn {
+  color: #fff;
+  background: #f16722;
+  border: 2px solid #f16722;
+}
+
+.lavewell_nav_manu.sticky a.dtbtn:hover {
+  color: #43baff;
+}
+
+.mobile-menu.mean-container {
+  overflow: hidden;
+}
+
+.header-btn {
+  text-align: right;
+}
+
+.header-btn a {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  background: #97aa85;
+  padding: 15px 42px;
+  margin-right: 14px;
+  position: relative;
+  z-index: 9;
+  transition: 0.5s;
+}
+
+.header-btn a::before {
+  position: absolute;
+  content: "";
+  width: 141px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  left: 0px;
+  top: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+}
+
+.header-btn a::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #97aa85;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(0);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.header-btn a:hover::after {
+  transform: scale(1);
+}
+
+.header-btn a:hover a {
+  color: #fff;
+}
+
+.header-btn a i {
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+  margin-left: 3px;
+}
+
+.header-btn a:hover {
+  background: #fff;
+  color: #232323;
+}
+
+.header-btn a:hover {
+  color: #fff;
+}
+
+.lavewell_nav_manu.style-2 .lavewell_menu > ul > li > a {
+  color: #232323;
+}
+
+.lavewell_nav_manu.style-2.sticky .lavewell_menu > ul > li > a {
+  color: #fff !important;
+}
+
+/*
+<!-- =======================================-->
+ <!--start lavewell slider area css-->
+<!-- ======================================= -->*/
+section.lavewell-slider-area {
+  position: relative;
+  margin-top: -100px;
+}
+
+.lavewell-slider-height {
+  height: 950px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lavewell-slider-height-2 {
+  height: 950px;
+}
+
+.lavewell-slider-bg,
+.lavewell-slider-bg2 {
+  background: url(../images/slider/slider-1-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.lavewell-slider-bg2 {
+  background: url(../images/slider/slider-2-bg.jpg);
+}
+
+.lavewell-slider-bg,
+.lavewell-slider-bg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 1500ms ease-in, -webkit-transform 7000ms ease;
+  transition: opacity 1500ms ease-in, -webkit-transform 7000ms ease;
+  transition: transform 9000ms ease, opacity 1500ms ease-in;
+  transition: transform 9000ms ease, opacity 1500ms ease-in,
+    -webkit-transform 9000ms ease;
+}
+
+.lavewell-slider-content {
+  padding-top: 55px;
+}
+
+.lavewell-slider-sub-title {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Josefin Sans";
+}
+
+h1.lavewell-slider-title {
+  font-size: 140px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.slider-btn {
+  display: inline-block;
+}
+
+.slider-btn a {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  background: #97aa85;
+  padding: 15px 42px;
+  margin-right: 14px;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.slider-btn a::before {
+  position: absolute;
+  content: "";
+  width: 141px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  left: 0px;
+  top: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+}
+
+.slider-btn a::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #97aa85;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(0);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.slider-btn a:hover::after {
+  transform: scale(1);
+}
+
+.slider-btn:hover a {
+  color: #fff;
+}
+
+.slider-btn a:hover {
+  background: #fff;
+  color: #232323;
+}
+
+.slider-btn a:hover {
+  color: #fff;
+}
+
+.slider-video-btn {
+  display: inline-block;
+}
+
+.slider-video-btn a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 65px;
+  background-color: #232323;
+  text-align: center;
+}
+
+.slider-video-btn a i {
+  font-size: 20px;
+  color: #97aa85;
+}
+
+.lavewell-slider-arrow-box button {
+  font-size: 24px;
+  height: 60px;
+  line-height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+  position: absolute;
+  left: 30px;
+  top: 472px;
+  z-index: 5;
+  border: 0;
+  background: url(../images/slider/slider-1-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.lavewell-slider-arrow-box button.slider-next {
+  margin-bottom: 10px;
+  left: auto;
+  right: 60px;
+}
+
+button.slider-next {
+  background: url(../images/slider/slider-2-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.lavewell-slider-arrow-box button {
+  transition: 0.4s;
+}
+
+.lavewell-slider-arrow-box-2 button {
+  left: 0;
+}
+.lavewell-slider-arrow-box-2 button.slider-next {
+  right: 0;
+}
+
+.lavewell-slider-title-box {
+  opacity: 0;
+  z-index: 3;
+  position: relative;
+  transform: translateY(-150px);
+}
+.lavewell-slider-btn {
+  transform: translateY(150px);
+  opacity: 0;
+}
+.lavewell-slider-wrapper .swiper-slide.swiper-slide-active .lavewell-slider-bg {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1);
+}
+.lavewell-slider-wrapper
+  .swiper-slide.swiper-slide-active
+  .lavewell-slider-bg2 {
+  -webkit-transform: scale(1.2);
+  transform: scale(1);
+}
+.lavewell-slider-wrapper
+  .swiper-slide.swiper-slide-active
+  .lavewell-slider-title-box {
+  opacity: 1;
+  transform: translatey(0px);
+  transition: all 2500ms ease;
+}
+.lavewell-slider-wrapper
+  .swiper-slide.swiper-slide-active
+  .lavewell-slider-btn {
+  opacity: 1;
+  transform: translatey(0px);
+  transition: all 2500ms ease;
+}
+
+/*
+<!-- =======================================-->
+  <!--start  lavewell service area css-->
+<!-- ======================================= -->*/
+.service-area {
+  padding: 150px 0 100px;
+  background: url(../images/home-1/ser-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.single-service-box,
+.single-service-box.box-2 {
+  text-align: center;
+  filter: drop-shadow(0px 5px 30px rgba(222, 222, 222, 0.6));
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  padding: 21px 20px 54px;
+  margin-right: 25px;
+}
+
+.single-service-box.box-2 {
+  margin-right: 0;
+  margin-left: 25px;
+}
+
+.service-content {
+  padding: 50px 38px 15px;
+}
+
+.service-thumb img {
+  width: 100%;
+}
+
+h5.service-sub-title {
+  font-size: 14px;
+  color: #97aa85;
+  font-weight: 500;
+  font-family: "Josefin Sans";
+}
+
+h1.service-title {
+  font-size: 60px;
+  line-height: 110px;
+  color: #232323;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1.service-title a {
+  display: inline-block;
+  transition: 0.5s;
+}
+
+h1.service-title a:hover {
+  color: #97aa85;
+}
+
+p.service-desc {
+  font-size: 17px;
+  line-height: 27px;
+  color: #6e706c;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.service-social-icon ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.service-social-icon ul li a {
+  display: inline-block;
+  background: #232323;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  font-size: 14px;
+  padding-top: 2px;
+  transition: 0.5s;
+}
+
+.service-social-icon ul li a:hover {
+  background: #97aa85;
+}
+.service-box-shape {
+  position: absolute;
+  bottom: -24px;
+  left: -36px;
+}
+
+.service-box-shape2 {
+  position: absolute;
+  bottom: -24px;
+  right: -36px;
+}
+
+.service-shape {
+  position: absolute;
+  left: 90px;
+  bottom: 320px;
+  animation: bounceleft 4s linear infinite;
+}
+
+.service-shape2 {
+  position: absolute;
+  right: 90px;
+  top: 320px;
+  animation: bounceleft 4s linear infinite;
+}
+
+/*
+<!-- =======================================-->
+  <!--start lavewell service area style-2-->
+<!-- ======================================= -->*/
+.service-area.style-2 {
+  padding: 125px 0 120px;
+  background: #fff;
+  position: relative;
+}
+
+.service-area.style-2 .single-service-box {
+  text-align: center;
+  background: #f4f0ed;
+  padding: 60px 0px 20px;
+  margin-right: 0;
+  margin-bottom: 30px;
+}
+
+.service-section .service-single-box {
+  margin-bottom: 30px;
+}
+
+.service-area.style-2 .service-content {
+  padding: 10px 38px 15px;
+}
+
+.service-area.style-2 h1.service-title {
+  font-size: 45px;
+  line-height: 80px;
+  color: #232323;
+  font-weight: 400;
+  margin: 0;
+}
+
+.service-area.style-2 p.service-desc {
+  font-size: 17px;
+  line-height: 27px;
+  color: #6e706c;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+/*
+<!-- =======================================-->
+  <!--start  lavewell counter area css-->
+<!-- ======================================= -->*/
+.coutner-area {
+  background: url(../images/home-1/counter-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 78px 0 66px;
+}
+
+h6.counter-sub-title {
+  font-size: 14px;
+  line-height: 27px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Josefin Sans";
+  margin: 0;
+}
+
+h2.counter-title {
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.counter-single-box {
+  padding-top: 6px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.counter-single-box::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 70px;
+  background: rgb(255 255 255 / 30%);
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.odometer-wrapper.counter-box-title h1 {
+  display: inline-block;
+  font-size: 80px;
+  line-height: 55px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Italianno";
+  margin: 0;
+}
+
+.counter-desc p {
+  font-size: 14px;
+  line-height: 27px;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Josefin Sans";
+}
+
+.row.counter .col-lg-2:last-child .counter-single-box::before {
+  display: none;
+}
+
+/*==========================================
+<!--start lavewell coutner-area style-2-->
+============================================*/
+.coutner-area.style-2 {
+  background: #fff;
+  padding: 0 0 70px;
+  position: relative;
+}
+
+.coutner-area.style-2 .odometer-wrapper.counter-box-title h1 {
+  color: #232323;
+}
+
+.coutner-area.style-2 h1.count-text {
+  position: relative;
+  top: 10px !important;
+}
+
+.coutner-area.style-2 .counter-desc p {
+  color: #232323;
+  text-transform: uppercase;
+}
+
+.coutner-area.style-2 .counter-single-box {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.coutner-area.style-2 .counter-single-box::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 70px;
+  background: rgb(0 0 0 / 10%);
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.row.counter-2 .col-lg-3:last-child .counter-single-box::before {
+  display: none;
+}
+
+.counter-shape {
+  position: absolute;
+  bottom: 109px;
+  left: 125px;
+  -webkit-animation: bounce 3s linear infinite;
+  animation: bounce 3s linear infinite;
+}
+
+.counter-shape2 {
+  position: absolute;
+  bottom: 109px;
+  right: 107px;
+  animation: bounceleft 4s linear infinite;
+}
+
+/*=====================================
+<--  start lavewell section title Css -->
+=======================================*/
+.section-title.text-center {
+  margin-bottom: 95px;
+}
+
+.section-title.text-left {
+  margin-bottom: 95px;
+}
+
+.section-sub-title h5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 42px;
+  color: #97aa85;
+  font-family: "Josefin Sans";
+  text-transform: uppercase;
+}
+
+.section-main-title h1 {
+  font-size: 100px;
+  line-height: 55px;
+  font-weight: 400;
+  color: #232323;
+  margin-top: 28px;
+}
+
+.section-main-title h2 {
+  font-size: 60px;
+  line-height: 42px;
+  font-weight: 400;
+  color: #232323;
+  margin-top: 18px;
+}
+
+.section-main-title h3 {
+  font-size: 80px;
+  line-height: 35px;
+  font-weight: 400;
+  color: #232323;
+  margin-top: 28px;
+}
+
+.about-section .section-main-title h3 {
+  font-size: 80px;
+  line-height: 62px;
+  font-weight: 400;
+  color: #232323;
+  margin-top: 15px;
+}
+
+.section-title-desc p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #6e706c;
+  margin-top: 35px;
+  margin-bottom: 38px;
+  padding: 0 63px 0 0;
+}
+
+.about-us-area .section-title-desc p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #6e706c;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.gallery-area.bottom .section-title-desc p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #6e706c;
+  margin-top: 0;
+  margin-bottom: 34px;
+  padding: 0 0px 0 45px;
+}
+
+.wishes-area .section-title-desc p {
+  margin-top: 47px;
+}
+
+.about-area .section-title.text-left {
+  margin-bottom: 30px;
+}
+
+.about-section .section-title.text-left {
+  margin-bottom: 46px;
+}
+
+.about-area.style-2 .section-title-desc p {
+  padding: 0 0px 0 100px;
+}
+
+.service-section .section-title.text-center {
+  margin-bottom: 102px;
+}
+
+.best-friends-area .section-title.text-center {
+  margin-bottom: 65px;
+}
+
+.gallery-area .section-title.text-center {
+  margin-bottom: 80px;
+}
+
+.wishes-area .section-title.text-left {
+  margin-bottom: 45px;
+}
+
+.testimonial-area.style-2 .section-title.text-center {
+  margin-bottom: 85px;
+}
+
+.contact-area .section-title.text-center {
+  margin-bottom: 80px;
+}
+
+.blog-area .section-title.text-center {
+  margin-bottom: 65px;
+}
+
+.about-us-area .section-title.text-left {
+  margin-bottom: 0;
+}
+
+.contact-section .section-title.text-left {
+  margin-bottom: 65px;
+}
+
+/*============================================
+ <!--start lavewell wedding event area css-->
+==============================================*/
+.wedding-event-area {
+  background: url(../images/home-1/Wedding-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 125px 0 150px;
+  position: relative;
+}
+
+.single-wedding-box {
+  text-align: right;
+  margin: 0 57px 95px 52px;
+}
+
+.single-wedding-box.box-2 {
+  text-align: left;
+  margin: 0 81px 95px 0px;
+}
+
+.single-wedding-box.last-child {
+  margin: 0 57px 0 26px;
+}
+
+.single-wedding-box.last-child .wedding-desc p::before {
+  display: none;
+}
+.wedding-number span {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 27px;
+  color: #ffffff;
+  font-weight: 400;
+  background-color: #97aa85;
+  padding: 1px 43px;
+}
+
+.wedding-title h1 {
+  font-size: 45px;
+  line-height: 42px;
+  color: #232323;
+  font-weight: 400;
+  margin: 36px 0 24px;
+}
+
+.wedding-desc p {
+  font-size: 17px;
+  line-height: 27px;
+  color: #6e706c;
+  font-weight: 400;
+  font-family: "Josefin Sans";
+  position: relative;
+}
+
+.wedding-desc p::before {
+  position: absolute;
+  content: "";
+  opacity: 0.102;
+  width: 510px;
+  height: 1px;
+  background-color: rgb(0 0 0);
+  left: 0;
+  bottom: -44px;
+}
+
+.wedding-shape {
+  position: absolute;
+  top: 178px;
+  left: 220px;
+  animation: bounceleft 4s linear infinite;
+}
+
+.wedding-shape2 {
+  position: absolute;
+  top: 178px;
+  right: 220px;
+  animation: bounceleft 4s linear infinite;
+}
+
+.wedding-active {
+  overflow-x: hidden;
+}
+
+.lavewell-wedding-arrow-box button {
+  display: inline-block;
+  font-size: 30px;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+  border: 0;
+  background: transparent;
+}
+
+.lavewell-wedding-arrow-box button.wedding-prev {
+  position: absolute;
+  margin-bottom: 10px;
+  left: 35%;
+  top: 58%;
+  z-index: 1;
+}
+
+.lavewell-wedding-arrow-box button.wedding-next {
+  position: absolute;
+  margin-bottom: 10px;
+  left: auto;
+  right: 39%;
+  top: 58%;
+  z-index: 1;
+}
+
+/*=====================================
+ <!--start lavewell about area css-->
+=======================================*/
+.about-area {
+  position: relative;
+}
+
+.about-area::before {
+  position: absolute;
+  content: "";
+  width: 42%;
+  height: 100%;
+  background: url(../images/home-1/about-thumb2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.about-area.style-2 {
+  background: url(../images/home-1/about-thumb3.png);
+  right: 0;
+  top: 0;
+}
+
+.about-content {
+  padding: 136px 0 0 75px;
+}
+
+.about-area.style-2 .about-content {
+  padding: 136px 75px 0 0px;
+  text-align: right;
+}
+
+.about-btn {
+  display: inline-block;
+}
+
+.about-btn a {
+  display: inline-block;
+  color: #232323;
+  font-size: 14px;
+  border: 1px solid rgb(35 35 35 / 10%);
+  padding: 12px 40px;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+.about-btn a::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #97aa85;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(0);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.about-btn a:hover::before {
+  transform: scale(1);
+}
+
+.about-btn:hover a {
+  color: #fff;
+}
+
+/*============================================
+  <!--start lavewell best friends area css-->
+==============================================*/
+.best-friends-area {
+  padding: 125px 0 150px;
+  background: url(../images/home-1/friends-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.single-best-friends {
+  background: #fff;
+  padding: 20px;
+}
+
+.friends-thumb img {
+  width: 100%;
+}
+
+.friends-content {
+  text-align: center;
+  padding: 45px 47px 16px;
+}
+
+.friends-name ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 22px;
+}
+
+.friends-name ul li a {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #232323;
+  transition: 0.5s;
+}
+
+.friends-name ul li a:hover {
+  color: #97aa85;
+}
+
+.friends-desc p {
+  font-size: 17px;
+  color: #6e706c;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.friend-shape {
+  position: absolute;
+  left: 190px;
+  bottom: 83px;
+  z-index: -1;
+}
+
+.friend-shape2 {
+  position: absolute;
+  right: 102px;
+  bottom: 112px;
+  animation: bounceleft 4s linear infinite;
+}
+
+/*=====================================
+  <!--start lavewell gallery area css-->
+=======================================*/
+.gallery-area {
+  padding: 125px 52px 110px 32px;
+}
+
+.gallery-area.bottom {
+  padding: 125px 33px 50px 50px;
+  position: relative;
+}
+
+.gallery__thumb-box {
+  margin: 0 9px 40px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.gallery__thumb-box::before {
+  position: absolute;
+  content: "";
+  height: 96%;
+  width: 96%;
+  background: rgb(151 170 133 / 0.9);
+  left: 2%;
+  top: 2%;
+  right: 2%;
+  bottom: 2%;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.gallery__thumb-icon {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  text-align: center;
+  z-index: 11;
+}
+
+.gallery__thumb-box:hover::before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.gallery__thumb-box:hover .gallery__thumb-icon {
+  opacity: 2;
+}
+
+.gallery-title-shape {
+  position: absolute;
+  top: 0;
+  left: 220px;
+}
+
+.gallery-shape {
+  position: absolute;
+  top: 150px;
+  right: 108px;
+  animation: bounceleft 4s linear infinite;
+}
+
+/*=========================================
+   <!--start lavewell contact area css-->
+=========================================*/
+.contact-area {
+  background: url(../images/home-1/contact-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 125px 0 150px;
+}
+
+.form-box {
+  margin-bottom: 17px;
+}
+
+.form-box input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgb(85 85 85 / 20%);
+  padding: 11px 10px;
+  transition: 0.3s;
+  box-shadow: none;
+}
+
+.form-box textarea {
+  width: 100%;
+  height: 205px;
+  background: transparent;
+  border: 1px solid rgb(85 85 85 / 20%);
+  margin: 10px 0 0px;
+  padding: 15px;
+}
+
+.form-box label {
+  font-size: 17px;
+  color: #555555;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding-top: 35px;
+}
+
+.contact-area input::placeholder,
+textarea::placeholder {
+  font-size: 17px;
+  font-weight: 400;
+  color: #555555;
+}
+
+.submit-button button {
+  width: 100%;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  background: #97aa85;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.submit-button button {
+  width: 100%;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  background: #97aa85;
+  text-transform: uppercase;
+  padding: 12px 20px;
+}
+
+/*=========================================
+   <!--start lavewell contact section css-->
+=========================================*/
+.contact-section {
+  background: #fff;
+  padding: 115px 0 150px;
+}
+
+.single-contact-box {
+  display: flex;
+  align-items: center;
+}
+
+.contact-address {
+  margin-bottom: 16px;
+}
+
+.contact-address.line {
+  position: relative;
+}
+
+.contact-address.line::before {
+  position: absolute;
+  content: "";
+  width: 566px;
+  height: 1px;
+  background: rgb(0 0 0 / 10%);
+  top: -15px;
+  left: 0;
+}
+
+.contact-icon {
+  margin-right: 15px;
+}
+
+.contact-icon i {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  font-size: 17px;
+  background: #97aa85;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.contact-title h5 {
+  font-size: 17px;
+  color: #555555;
+  font-weight: 400;
+  font-family: "Josefin Sans";
+}
+
+.contact-addres p {
+  font-size: 35px;
+  line-height: 45px;
+  color: #232323;
+  font-weight: 400;
+  font-family: "Italianno";
+}
+
+.row.form-bg {
+  background: #f4f0ed;
+  padding: 53px 60px 70px 60px;
+  position: relative;
+  margin-top: -268px;
+}
+
+.contact-form-title h2 {
+  margin-bottom: 35px;
+  font-size: 45px;
+  color: #003831;
+  font-weight: 400;
+  font-family: "Italianno";
+  text-align: center;
+}
+
+.contact-section .form-box {
+  margin-bottom: 30px;
+}
+
+.contact-section input::placeholder,
+textarea::placeholder {
+  font-size: 17px;
+  font-weight: 400;
+  color: #555555;
+  opacity: 0.702;
+  font-family: "Urbanist";
+}
+
+.contact-section .form-box input {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  border: 0;
+  border-bottom: 1px solid rgb(85 85 85 / 20%);
+  padding: 0px 30px;
+  transition: 0.3s;
+  box-shadow: none;
+}
+
+.contact-section .form-box textarea {
+  width: 100%;
+  height: 140px;
+  background: #fff;
+  border: 1px solid rgb(85 85 85 / 20%);
+  margin: 0;
+  padding: 14px 30px;
+}
+
+.contact-section .submit-button button {
+  width: 100%;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  background: #97aa85;
+  text-transform: uppercase;
+  padding: 17px 20px;
+}
+
+/*=============================================
+   <!--start lavewell google map css-->
+===============================================*/
+.google-map iframe {
+  width: 100%;
+  height: 600px;
+}
+
+/*=============================================
+   <!--start lavewell testimonial-area css-->
+===============================================*/
+.testimonial-area {
+  background: url(../images/home-1/testi-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 142px 0 132px;
+  position: relative;
+  overflow: hidden;
+}
+
+.testi-single-box {
+  text-align: center;
+}
+
+ul.testi-rating li {
+  display: inline-block;
+  color: #ffab00;
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+
+p.testi-desc {
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  margin: 30px 0 40px;
+}
+
+h3.testi-user-name {
+  margin-top: 35px;
+  font-size: 45px;
+  color: #fff;
+  font-weight: 400;
+}
+
+h3.testi-user-name span {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Josefin Sans";
+}
+
+.testimonial-area .lavewell-testi-arrow-box button {
+  display: inline-block;
+  font-size: 24px;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+  border: 0;
+  background: transparent;
+}
+
+.testimonial-area .lavewell-testi-arrow-box button.testi-prev {
+  position: absolute;
+  margin-bottom: 10px;
+  left: 6px;
+  top: 44%;
+  z-index: 1;
+}
+
+.testimonial-area .lavewell-testi-arrow-box button.testi-next {
+  position: absolute;
+  margin-bottom: 10px;
+  left: auto;
+  right: 12px;
+  top: 44%;
+  z-index: 1;
+}
+
+.swiper.testi-active {
+  overflow-x: hidden;
+}
+
+/*====================================================
+   <!--start lavewell testimonial-area css style-2-->
+=======================================================*/
+.testimonial-area.style-2 {
+  background: url(../images/home-2/test-bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 125px 0 140px;
+}
+
+.testimonial-active {
+  overflow-x: hidden;
+}
+
+.testimonial-area.style-2 h3.testi-user-name {
+  font-size: 45px;
+  color: #232323;
+  font-weight: 400;
+}
+
+.testimonial-area.style-2 p.testi-desc {
+  font-size: 17px;
+  font-weight: 400;
+  color: #6e706c;
+  margin: 30px 0 35px;
+  text-align: center;
+}
+
+.testimonial-area.style-2 ul.testi-rating {
+  text-align: center;
+}
+
+.lavewell-testimonial-arrow-box button {
+  display: inline-block;
+  font-size: 30px;
+  transition: all 0.3s ease 0s;
+  color: #232323;
+  border: 0;
+  background: transparent;
+  opacity: 0.8;
+}
+
+.lavewell-testimonial-arrow-box button.testimonial-prev {
+  position: absolute;
+  margin-bottom: 10px;
+  left: 6px;
+  top: 44%;
+  z-index: 1;
+}
+
+.lavewell-testimonial-arrow-box button.testimonial-next {
+  position: absolute;
+  margin-bottom: 10px;
+  left: auto;
+  right: 6px;
+  top: 44%;
+  z-index: 1;
+}
+
+/*=====================================
+   <!--start lavewell blog area css-->
+=======================================*/
+.blog-area {
+  background: url(../images/home-1/blog-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 125px 0 120px;
+  position: relative;
+}
+
+.blog-area::before {
+  position: absolute;
+  content: "";
+  width: 1320px;
+  height: 1px;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.078;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.blog-singele-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.blog-thumb {
+  position: relative;
+}
+
+.blog-thumb img {
+  width: 100%;
+}
+
+.blog-content {
+  background: rgb(151 170 133 / 95%);
+  position: absolute;
+  bottom: 50px;
+  left: 15px;
+  padding: 36px 31px 46px 35px;
+  width: 91%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.blog-date span {
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+h3.blog-title {
+  margin-bottom: 8px;
+}
+
+h3.blog-title a {
+  display: inline-block;
+  color: #fff;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+p.blog-desc {
+  font-size: 17px;
+  line-height: 27px;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.blog-btn a {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  transition: 0.5s;
+  padding-left: 32px;
+}
+
+.blog-btn a::before {
+  position: absolute;
+  content: "";
+  width: 141px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  left: 0px;
+  top: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+}
+
+.blog-meta-title {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.blog-meta-title h2 a {
+  display: inline-block;
+  color: #fff;
+  font-size: 45px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+/* all hover */
+.blog-singele-box:hover .blog-content {
+  opacity: 1;
+  bottom: 15px;
+}
+
+.blog-singele-box:hover .blog-meta-title h2 a {
+  opacity: 0;
+}
+
+.blog-btn a:hover {
+  color: #232323;
+  background: #fff;
+}
+
+/*=====================================
+  <!--start lavewell brand area css-->
+=======================================*/
+.brand-area {
+  background: #f4f0ed;
+  padding: 100px 0 95px;
+}
+
+.brand-box {
+  text-align: center;
+}
+
+.band-active {
+  overflow-x: hidden;
+}
+
+/*=====================================
+<!-- Start lavewell Footer Area css-->
+=======================================*/
+
+.footer-area {
+  background: #fff;
+  padding: 100px 0 82px;
+  position: relative;
+}
+
+.footer-area.style-2 {
+  padding: 100px 0 85px;
+}
+
+.footer-bg {
+  background: #f4f0ed;
+}
+
+.footer-single-item {
+  text-align: center;
+  padding-top: 92px;
+}
+
+.footer-single-item2 {
+  text-align: left;
+  padding-top: 92px;
+}
+
+.footer-logo {
+  text-align: center;
+  position: relative;
+}
+
+.footer-logo::before {
+  position: absolute;
+  content: "";
+  height: 110px;
+  width: 1px;
+  background: rgb(85 85 85 / 20%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 110px;
+}
+
+.footer-title h1 {
+  font-size: 60px;
+  font-weight: 400;
+  color: #232323;
+  margin-bottom: 15px;
+  padding-left: 85px;
+}
+
+.footer-single-item2 .footer-title h1 {
+  padding-left: 60px;
+}
+
+.footer-info p,
+.footer-info span {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 400;
+  color: #6e706c;
+}
+
+.footer-info p {
+  margin-right: 33px;
+}
+
+.footer-info p i,
+.footer-info span i {
+  display: inline-block;
+  background: #97aa85;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.footer-shape {
+  position: absolute;
+  left: 250px;
+  top: 150px;
+  animation: bounceleft 4s linear infinite;
+}
+
+.footer-shape2 {
+  position: absolute;
+  top: 210px;
+  right: 160px;
+  animation: bounceleft 4s linear infinite;
+}
+
+/*=====================================
+<--  end lavewell footer-area Css -->
+=======================================*/
+
+/*=====================================
+<!--start lavewell banner area css-->
+=======================================*/
+.lavewell-banner-area {
+  background: url(../images/home-2/banner-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 830px;
+  position: relative;
+}
+
+.banner-content {
+  padding-top: 125px;
+}
+
+.banner-sub-title h4 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 50px;
+  color: #232323;
+  text-align: center;
+  font-family: "Josefin Sans";
+}
+
+.banner-title h1 {
+  font-size: 150px;
+  line-height: 140px;
+  color: #232323;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 36px;
+}
+
+.banner-btn {
+  margin-top: 27px;
+  text-align: center;
+}
+
+.banner-btn a {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #232323;
+  font-weight: 500;
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgb(0 0 0 / 15%);
+  text-align: center;
+  line-height: 120px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.banner-btn a::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: #232323;
+  border: 1px solid rgb(0 0 0 / 15%);
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: all;
+  transition-property: all;
+  opacity: 1;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  z-index: -1;
+  border-radius: 100%;
+}
+
+.banner-btn a:hover:after {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.banner-btn:hover a {
+  color: #97aa85;
+}
+
+.banner-img-shape {
+  position: absolute;
+  left: 70px;
+  top: 180px;
+  margin: auto 0;
+  -webkit-animation: bounce 3s linear infinite;
+  animation: bounce 3s linear infinite;
+}
+
+.banner-img-shape2 {
+  position: absolute;
+  right: 50px;
+  top: 180px;
+  -webkit-animation: bounce 3s linear infinite;
+  animation: bounce 3s linear infinite;
+}
+
+/*==========================================
+<!--start  lavewell service section css-->
+============================================*/
+.service-section {
+  background: url(../images/home-2/service-sec-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 125px 0 120px;
+}
+
+.service-single-box {
+  background: #fff;
+  box-shadow: 0px 0px 28.5px 1.5px rgba(85, 85, 85, 0.05);
+  text-align: center;
+  filter: drop-shadow(0 0 15px rgba(85, 85, 85, 0.05));
+  padding: 10px 12px 0;
+}
+
+.service-section .service-content {
+  padding: 35px 38px 40px;
+}
+
+.service-section h1.service-title {
+  margin: 0;
+  font-size: 45px;
+  line-height: 52px;
+  color: #232323;
+  font-weight: 400;
+}
+
+.service-section h5.service-sub-title {
+  font-family: "Josefin Sans";
+  font-size: 17px;
+  line-height: 28px;
+  color: #6e706c;
+  font-weight: 400;
+}
+
+/*=====================================
+<!--start  lavewell about section css-->
+=======================================*/
+.about-section {
+  background: url(../images/home-2/about-sec-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 140px 0 152px;
+  position: relative;
+}
+
+.about-section .about-thumb {
+  text-align: right;
+  position: relative;
+  margin-right: 75px;
+}
+
+.about-section .about-thumb-shape {
+  position: absolute;
+  left: -186px;
+  bottom: -86px;
+  -webkit-animation: bounce 3s linear infinite;
+  animation: bounce 3s linear infinite;
+}
+
+.about-shape {
+  position: absolute;
+  top: 170px;
+  right: 120px;
+  -webkit-animation: bounce 3s linear infinite;
+  animation: bounce 3s linear infinite;
+}
+
+.about-btn {
+  display: inline-block;
+}
+
+.about-button a {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  border: 1px solid rgb(35 35 35 / 10%);
+  padding: 14px 37px;
+  background: #97aa85;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.about-button a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 0.5s;
+  width: 179px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.about-button a::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(0);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.about-button a:hover::after {
+  transform: scale(1);
+}
+
+.about-button:hover a {
+  color: #232323;
+}
+
+/*=====================================
+<!--start lavewell wishes area css-->
+=======================================*/
+.wishes-area {
+  background: url(../images/home-2/wishes-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 0 150px;
+}
+
+.wishes-content {
+  background: url(../images/home-2/wish-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+}
+
+.wishes-btn {
+  display: inline-block;
+}
+
+.wishes-btn a {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #232323;
+  border: 1px solid rgb(0 0 0 / 15%);
+  padding: 15px 37px;
+  position: relative;
+  z-index: 1;
+}
+
+.wishes-btn a::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #97aa85;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(0);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.wishes-btn a:hover::before {
+  transform: scale(1);
+}
+
+.wishes-btn:hover a {
+  color: #fff;
+}
+
+/*=====================================
+<!--start lavewell team area css-->
+=======================================*/
+.team-area {
+  background: url(../images/home-2/team-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 125px 0 120px;
+}
+
+.single-team-box {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.team-thumb {
+  position: relative;
+}
+
+.team-thumb img {
+  width: 100%;
+}
+
+.team-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.team-icon i {
+  display: inline-block;
+  font-size: 25px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  background: #97aa85;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.team-icon.active .team-icon i {
+  transform: rotate(45deg);
+}
+
+.team-social-icon ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.team-social-icon ul li a {
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.team-social-icon ul li a:hover i {
+  background: #000;
+}
+
+.team-social-icon ul li a:hover {
+  color: #fff;
+  background: #97aa85;
+}
+
+.team-social-icon ul li a i {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  background: #fff;
+  text-align: center;
+  color: #97aa85;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+.team-social-icon {
+  z-index: 1;
+  display: inline-block;
+  position: absolute;
+  top: 80%;
+  right: 0px;
+  padding: 16px 0px 5px 0px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.team-icon.active .team-social-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-content {
+  text-align: center;
+  padding: 25px 0 25px;
+}
+
+h1.team-title {
+  font-size: 45px;
+  color: #232323;
+  font-weight: 400;
+}
+
+h1.team-title a {
+  display: inline-block;
+  transition: 0.5s;
+}
+
+h1.team-title a:hover {
+  color: #6e706c;
+}
+
+h5.team-sub-title {
+  color: #6e706c;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Josefin Sans";
+  margin: 0;
+}
+
+/*=====================================
+<!-- Start lavewell  Video section css-->
+=======================================*/
+.video-section {
+  background-image: url(../images/home-2/video.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .video__area {
+    background-attachment: unset;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .video__area {
+    background-attachment: unset;
+  }
+}
+
+.video__area:hover .play-now {
+  opacity: 1;
+  visibility: visible;
+}
+
+.video__area .play-now {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 17px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffffff;
+  text-transform: capitalize;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .video__area .play-now {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .video__area .play-now {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+  }
+}
+
+.video__content {
+  display: block;
+  width: 100%;
+  height: 700px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .video__content {
+    height: 550px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .video__content {
+    height: 550px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .video__content {
+    height: 450px;
+  }
+}
+
+.video__content a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.cursor {
+  position: fixed;
+  pointer-events: none;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 23px;
+  color: #fff;
+  background: black;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 999;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cursor.video {
+  width: 110px;
+  height: 110px;
+  line-height: 100px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffffff;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .cursor.video {
+    display: none;
+  }
+}
+
+/*=========================================
+<!--start lavewell call to action area css-->
+===========================================*/
+.call-to-action-area {
+  background: #f4f0ed;
+}
+
+.call-to-action-area.inner {
+  padding-top: 150px;
+}
+
+.call-to-action-area.inner-2 {
+  background: #fff;
+  padding-top: 150px;
+}
+
+.row.call-bg {
+  background: url(../images/home-2/call-action-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 65px 0px 58px 65px;
+}
+
+.call-to-action-area.inner-2 .row.call-bg {
+  background: url(../images/inner/call-action-bg2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 65px 0px 58px 65px;
+}
+
+h5.call-action-title {
+  color: #97aa85;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Josefin Sans";
+}
+
+h1.call-sub-title {
+  font-size: 60px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.call-action-btn {
+  text-align: center;
+}
+
+.call-action-btn a {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  background: #97aa85;
+  padding: 15px 36px;
+  margin-right: 14px;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+  border: 1px solid transparent;
+}
+
+.call-action-btn a::before {
+  position: absolute;
+  content: "";
+  width: 141px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  left: 0px;
+  top: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+}
+
+.call-action-btn a::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(0);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.call-to-action-area.inner-2 .call-action-btn a::after {
+  background: #f4f0ed;
+}
+
+.call-action-btn a:hover::after {
+  transform: scale(1);
+}
+
+.call-action-btn:hover a {
+  color: #232323;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/*=========================================
+<!--start lavewell breadcumb Area css-->
+===========================================*/
+.breadcumb-area {
+  background: url(../images/inner/breadcumb-bg.png);
+  padding: 230px 0 156px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: -100px;
+}
+
+.breadcumb-content h4 {
+  font-size: 100px;
+  line-height: 110px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.breadcumb-content ul li {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.breadcumb-content ul li a {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+/*=========================================
+<!--start lavewell about us area css-->
+===========================================*/
+.about-us-area {
+  padding: 150px 0 130px;
+}
+
+.about-us-area .about-thumb {
+  position: relative;
+  text-align: right;
+  margin-right: 60px;
+}
+
+.about-us-area .about-thu {
+  position: absolute;
+  bottom: 14px;
+  left: -73px;
+  -webkit-animation: bounce 3s linear infinite;
+  animation: bounce 3s linear infinite;
+}
+
+.about-us-area .about-content {
+  padding: 0;
+}
+
+.about-us-area .about-item-box {
+  display: flex;
+  align-items: center;
+}
+
+.about-us-area .about-item-box h3 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Josefin Sans";
+}
+
+.about-us-area .about-icon {
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  background: #97aa85;
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.about-us-area .about-desc p {
+  color: #6e706c;
+  font-size: 17px;
+  padding: 10px 0 16px 34px;
+}
+
+.about-us-btn {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.about-us-btn a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 13px 36px;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #97aa85;
+}
+
+.about-us-btn a::before {
+  position: absolute;
+  content: "";
+  width: 179px;
+  height: 40px;
+  border: 1px solid rgba(255 255 255 / 15%);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
+.about-us-btn a::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #f4f0ed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(0);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.about-us-btn a:hover::after {
+  transform: scale(1);
+}
+
+.about-us-btn:hover a {
+  color: #232323;
+}
+
+/*=========================================
+<!--start lavewell about me area css -->
+===========================================*/
+.about-me-area {
+  padding: 100px 0 100px;
+}
+
+.about-me-profile {
+  text-align: center;
+}
+
+h3.about-me-title {
+  font-size: 50px;
+  font-weight: 400;
+  color: #232323;
+}
+
+h4.about-me-sub-title {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+p.about-me-des {
+  font-size: 20px;
+  color: #232323;
+  padding-top: 20px;
+}
+
+p.about-me-desc {
+  font-size: 20px;
+  color: #232323;
+}
+
+.social-title h5 {
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.about-me-social ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 10px 0;
+}
+
+.about-me-social ul li a {
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.about-me-social ul li a:hover {
+  color: #97aa85;
+}
+/*=========================================
+<!--start lavewell pricing area css-->
+===========================================*/
+.pricing-area {
+  background: #f4f0ed;
+  padding: 100px 0 100px;
+}
+
+.pricing-single-box {
+  background: #fff;
+}
+
+h3.priching-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Josefin Sans";
+}
+
+h1.priching-doller {
+  font-size: 40px;
+  margin-bottom: 0;
+  font-family: "Josefin Sans";
+  font-weight: 500;
+  color: #97aa85;
+}
+
+h1.priching-doller span {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.pricing-text {
+  padding: 30px;
+  text-align: center;
+  border-bottom: 1px solid #f4f0ed;
+}
+
+.pricing-body {
+  padding: 40px;
+  padding-top: 35px;
+  text-align: center;
+}
+
+ul.pricing-list li {
+  list-style: none;
+}
+
+ul.pricing-list li {
+  list-style: none;
+  padding-bottom: 15px;
+  color: #232323;
+  font-size: 18px;
+  font-family: "Josefin Sans";
+}
+
+.pricing-btn a {
+  display: inline-block;
+  background: #97aa85;
+  color: #fff;
+  padding: 12px 35px;
+  transition: 0.5s;
+}
+
+.pricing-btn a:hover {
+  background: #232323;
+}
+
+/*=========================================
+<!--start lavewell team details area css-->
+===========================================*/
+.team-details-area {
+  padding: 122px 0 88px;
+  background: #f4f4f4;
+  position: relative;
+  z-index: 1;
+}
+
+.team-thumb img {
+  width: 100%;
+}
+
+.team-details-area .team-member-title h4 {
+  font-size: 36px;
+  margin: 0;
+  font-family: "Josefin Sans";
+}
+
+.team-details-area .team-details-content p {
+  color: #232323;
+}
+
+.team-details-area p.desc {
+  margin-top: 34px;
+  margin-bottom: 45px;
+}
+
+.team-details-area .contact-info-box {
+  background: #fff;
+  padding: 29px 25px 27px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  gap: 11px;
+}
+
+.team-details-area .contact-info-icon i {
+  display: inline-block;
+  color: #97aa85;
+  border: 2px solid #97aa85;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 56px;
+  font-size: 22px;
+  transition: 0.5s;
+}
+
+.team-details-area .contact-info-content h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  transition: 0.5s;
+  font-family: "Josefin Sans";
+}
+
+.team-details-area .contact-info-content p {
+  font-size: 20px;
+  color: #97aa85;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+}
+
+.team-details-area .team-details-social-icon ul li {
+  font-size: 22px;
+  color: #041424;
+  font-weight: 600;
+  margin-top: 49px;
+  display: inline-block;
+}
+
+.team-details-area .team-details-social-icon ul li i {
+  background: #e5e7e9;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 38px;
+  color: #111;
+  font-size: 14px;
+  margin-left: 7px;
+  transition: 0.5s;
+}
+
+.team-details-area .team-details-social-icon ul li i:hover {
+  background: #97aa85;
+  color: #fff;
+}
+
+.team-details-area .team-details-location-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 46px;
+}
+
+.team-details-area .team-details-location-box .contact-info-content p {
+  font-size: 17px;
+  color: #7a7a7a;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+}
+
+.team-details-area .team-details-skills {
+  margin-top: 115px;
+}
+
+.team-details-area .team-details-skills h4 {
+  font-size: 36px;
+  margin: 0 0 49px;
+  font-family: "Josefin Sans";
+}
+
+.team-details-area .skill {
+  margin-bottom: 38px;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-details-area .contact_from_box {
+  margin-top: 115px;
+}
+
+.team-details-area .form_box input {
+  background: transparent;
+}
+
+.team-details-area .form_box input {
+  border: 1px solid rgba(122, 122, 122, 0.5);
+  height: 60px;
+  border-radius: 15px;
+  padding: 0 23px 0;
+  margin-bottom: 21px;
+  width: 100%;
+  transition: 0.5s;
+  font-size: 16px;
+  line-height: 26px;
+  color: #232323;
+  font-weight: 400;
+  font-family: "Fira Sans";
+}
+
+.team-details-area .form_box textarea {
+  background: transparent;
+}
+
+.team-details-area .form_box textarea {
+  border: 1px solid rgba(122, 122, 122, 0.5);
+  outline: 0;
+  width: 100%;
+  padding: 17px 23px 0;
+  height: 150px;
+  margin-bottom: 22px;
+  transition: 0.5s;
+  border-radius: 25px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #232323;
+  font-weight: 400;
+  font-family: "Fira Sans";
+}
+
+.quote_button button {
+  background: #97aa85;
+  padding: 14px 48px 14px;
+  border-radius: 30px;
+  transition: 0.5s;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Fira Sans";
+  transition: 0.5s;
+}
+
+.quote_button button:hover {
+  color: #fff;
+  background: #232323;
+}
+
+.team-details-area input::placeholder {
+  color: #232323;
+}
+
+.team-details-area textarea::placeholder {
+  color: #232323;
+}
+
+/* prossesss bar */
+.single-skill-box {
+  padding: 115px 0 0;
+}
+.prossess-ber-plugin {
+}
+
+h4.skill-title {
+  font-size: 36px;
+  margin: 0 0 49px;
+  font-family: "Josefin Sans";
+}
+
+.prossess-ber-plugin span {
+  color: #232323;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.barfiller {
+  width: 100%;
+  height: 6px;
+  background: rgba(0, 37, 112, 0.2);
+  position: relative;
+  margin-bottom: 25px;
+  margin-top: 12px;
+  border-radius: 5px;
+}
+
+span.fill {
+  background: #97aa85 !important;
+  border-radius: 5px;
+}
+
+.barfiller .fill {
+  display: block;
+  position: relative;
+  width: 0px;
+  height: 100%;
+  background: #232323;
+  z-index: 1;
+}
+.barfiller .tipWrap {
+  display: none;
+}
+
+.barfiller .tip {
+  margin-top: -37px;
+  font-size: 18px;
+  color: #97aa85;
+  font-weight: 500;
+  left: 0px;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 2;
+}
+
+/*=========================================
+<!--start lavewell portfolio details css-->
+===========================================*/
+.portfolio-details-area {
+  padding: 100px 0 100px;
+}
+
+.portfolio-details-thumb img {
+  width: 100%;
+}
+
+.row.portfolio-box-info {
+  position: relative;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  padding: 43px 50px 50px;
+  z-index: 1;
+  justify-content: center;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.portfolio-details-box p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.portfolio-details-box h6 {
+  font-size: 16px;
+  font-family: "Josefin Sans";
+  line-height: 24px;
+}
+
+h4.portfolio-details-title {
+  font-size: 36px;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  margin: 48px 0 24px;
+}
+
+p.portfolio-details-desc {
+  color: #232323;
+}
+
+.portfolio-det-title h3 {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 48px 0 24px;
+  font-family: "Josefin Sans";
+}
+
+p.portfolio-det-desc {
+  color: #232323;
+}
+
+.portfolio-details-item-images img {
+  width: 100%;
+}
+
+.portfolio-details-list-item h4 {
+  font-size: 28px;
+  font-family: "Josefin Sans";
+}
+
+.portfolio-details-list-item ul li {
+  list-style: none;
+  font-size: 17px;
+  line-height: 39px;
+  color: #232323;
+}
+
+.portfolio-details-list-item ul li i {
+  display: inline-block;
+  color: #97aa85;
+  font-size: 19px;
+  margin-right: 11px;
+  position: relative;
+  top: 2px;
+}
+
+/*=====================================
+ strt lavewell faq Accordion css
+=======================================*/
+
+.breadcumb-area.style-0 {
+  position: relative;
+  margin-top: -100px;
+}
+
+.tab_container {
+  overflow: hidden;
+  padding: 105px 0 0;
+}
+
+.accordion li {
+  list-style: none;
+  padding: 0px 0px 20px;
+}
+
+.accordion li a {
+  position: relative;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+  color: #232323 !important;
+  background-color: #f4f0ed;
+  border: 2px solid #ffffff;
+  padding: 16px 20px 16px 25px;
+  z-index: 1;
+}
+
+.accordion li a span {
+  font-size: 20px;
+  color: var(--secondary-color);
+  padding: 0 15px 0 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.accordion li a span:before {
+  position: absolute;
+  content: "";
+  top: -8px;
+  right: -765px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.30196078431372547);
+  border: 2px solid #ffffff;
+}
+
+.accordion li p {
+  display: none;
+  padding: 24px 15px 10px 25px;
+  margin: 0;
+  background: #f4f0ed;
+  overflow: hidden;
+  font-family: "DM Sans";
+}
+
+.accordion a:before {
+  width: 3px;
+  height: 15px;
+  background: #97aa85;
+  position: absolute;
+  right: 41px;
+  content: " ";
+  top: 22px;
+  transform: rotate(0deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.accordion a:after {
+  width: 15px;
+  height: 3px;
+  background: #97aa85;
+  position: absolute;
+  right: 35px;
+  content: " ";
+  top: 28px;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+/* Active */
+.accordion a.active:after {
+  transform: rotate(0deg);
+  -webkit-transition: all 0.5s ease-in-out;
+  background: #fff;
+}
+
+.accordion a.active:before {
+  display: none;
+}
+
+.accordion a.active {
+  background: #97aa85;
+  color: #fff !important;
+  border: 2px solid #97aa85;
+}
+
+.accordion li a.active span {
+  color: #fff;
+}
+
+/* STyle 2 */
+
+.faq-section .tab_container {
+  padding: 120px 0 120px;
+}
+
+/* Accordion Style 2 */
+
+.accordion2 li {
+  list-style: none;
+  padding: 0px 0px 25px;
+}
+
+.accordion2 li p {
+  display: none;
+  padding: 24px 15px 30px 25px;
+  margin: 0;
+  background: #f4f0ed;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: "DM Sans";
+  border-top: 0;
+  border-right: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+/*=========================================
+<!--start lavewell blog area 2column css-->
+===========================================*/
+.widget-sidber {
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  padding: 32px 41px 29px;
+  margin-bottom: 27px;
+}
+
+.widget_search {
+  position: relative;
+}
+
+.widget_search input {
+  border-radius: 4px;
+  padding-left: 20px !important;
+  height: 60px;
+  width: 100% !important;
+  position: relative;
+  color: #012549;
+  outline: 0 !important;
+  border: transparent !important;
+}
+
+button.icons {
+  border: 0;
+  font-size: 16px;
+  position: absolute;
+  right: 14px;
+  top: 20px;
+  color: #1e1e1e;
+  background: transparent;
+}
+
+.widget-sidber-content h4 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 46px;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+}
+
+.widget-category ul li {
+  list-style: none;
+}
+
+.widget-category ul li a {
+  padding: 14px 26px;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #001819;
+  font-weight: 500;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+  border: 2px solid #ffff;
+  text-transform: uppercase;
+}
+
+.widget-category ul li a:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  background: #97aa85;
+  z-index: -1;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.widget-category ul li a:hover:before {
+  width: 100%;
+  left: 0;
+}
+
+.widget-category ul li a:hover {
+  color: #fff;
+}
+
+.widget-category ul li i {
+  color: black;
+  display: inline-block;
+  float: right;
+  font-size: 17px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.widget-category ul li a:hover i {
+  opacity: 1;
+  color: #fff;
+}
+.sidber-widget-recent-post {
+  margin-bottom: 27px;
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+.recent-widget-content a {
+  transition: 0.5s;
+  width: 95%;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  color: #050a1e;
+  font-weight: 600;
+}
+
+.recent-widget-content a:hover {
+  color: #97aa85;
+}
+
+.recent-widget-content p {
+  font-size: 14px;
+  margin: 0;
+  color: #97aa85;
+  text-transform: uppercase;
+}
+
+.widget-catefories-tags a {
+  display: inline-block;
+  color: #101010;
+  font-weight: 500;
+  background: #fff;
+  padding: 6px 17px;
+  margin: 6px 3px;
+  position: relative;
+  z-index: 1;
+  font-size: 15px;
+}
+
+.widget-catefories-tags a:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  background: #97aa85;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.widget-catefories-tags a:hover {
+  color: #fff;
+}
+
+.widget-catefories-tags a:hover:before {
+  width: 100%;
+  left: 0;
+}
+
+/* comments box */
+.sidebar__comments {
+  position: relative;
+  display: block;
+  color: #fff;
+  background-color: #f2f3f5;
+  padding: 46px 50px 43px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.sidebar__single + .sidebar__single {
+  margin-top: 30px;
+}
+
+.sidebar__title {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-family: "Josefin Sans";
+}
+
+.sidebar__comments .sidebar__title {
+  margin-bottom: 25px;
+}
+
+.sidebar__comments-list {
+  position: relative;
+  display: block;
+}
+
+.sidebar__comments-list li + li {
+  margin-top: 23px;
+}
+
+.sidebar__comments-list li {
+  position: relative;
+  display: block;
+  padding-left: 65px;
+  color: #fff;
+}
+
+.sidebar__comments-icon {
+  height: 45px;
+  width: 45px;
+  background-color: #97aa85;
+  border-radius: 50%;
+  font-size: 15px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.sidebar__comments-text-box p {
+  font-size: 18px;
+  margin: 0;
+  line-height: 26px;
+  font-weight: 500;
+  color: #232323;
+}
+
+.sidebar__comments-text-box h5 {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/*---=====================================================
+<!-- Start lavewell blog details css-->
+=========================================================---*/
+.blog-details-area {
+  padding: 119px 0 119px;
+  background: #f4f0ed;
+}
+
+.blog-details-thumb {
+  overflow: hidden;
+}
+
+.blog-details-area span.mate-text {
+  padding-left: 36px;
+  position: relative;
+}
+
+.blog-details-area .meta-blog span {
+  display: inline-block;
+  margin-right: 28px;
+  font-weight: 500;
+}
+
+.blog-details-content span.mate-text {
+  display: inline-block;
+  color: #232323;
+}
+
+span.mate-comment {
+  display: inline-block;
+  color: #232323;
+  margin-left: 20px;
+}
+
+span.mate-text i,
+span.mate-comment i {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.blog-details-thumb img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.blog-details-thumb img:hover {
+  transform: scale(1.2);
+}
+
+.blog-details-content {
+  padding: 27px 36px 20px;
+  border: 1px solid #2222;
+}
+
+.blog-details-area .meta-blog span {
+  display: inline-block;
+  margin-right: 28px;
+  font-weight: 500;
+}
+
+.blog-details-area span.mate-text {
+  padding-left: 36px;
+}
+
+.blog-details-area .meta-blog i {
+  display: inline-block;
+  color: #97aa85;
+  padding-right: 9px;
+}
+
+.blog-details-area .meta-blog img {
+  margin-right: 8px;
+  position: relative;
+  top: -1px;
+}
+
+h4.blog-details-title {
+  font-size: 32px;
+  margin: 12px 0 19px;
+  font-family: "Josefin Sans";
+}
+
+p.blog-details-desc {
+  font-size: 17px;
+  margin-bottom: 25px;
+  color: #232323;
+}
+
+.blog-details-author-talk {
+  display: flex;
+  gap: 26px;
+  background: #f4f4f4;
+  padding: 41px 30px 40px;
+  margin-top: 48px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.blog-details-quote i {
+  display: inline-block;
+  color: #fff;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: #97aa85;
+  border-radius: 50%;
+}
+
+.blog-details-quote img {
+  position: relative;
+  top: 8px;
+}
+
+.blog-details-author-title p {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 30px;
+  color: #001819;
+}
+
+.blog-details-quote img {
+  position: relative;
+  top: 8px;
+  color: #001819;
+}
+
+.blog-details-author-title span {
+  margin-left: 58px;
+  display: inline-block;
+  color: #001819;
+  position: relative;
+}
+
+.blog-details-author-title span:before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  left: -58px;
+  top: 12px;
+  background: #97aa85;
+}
+
+h3.blog-details-title {
+  font-size: 28px;
+  margin: 54px 0 16px;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+}
+
+p.blog-details-desc.two {
+  width: 95%;
+}
+
+.blog-details-list-item {
+  margin-bottom: 40px;
+}
+
+.blog-details-list-item ul li {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.blog-details-list-item ul li {
+  list-style: none;
+}
+
+.blog-details-list-item ul li i {
+  display: inline-block;
+  color: #97aa85;
+  font-size: 18px;
+  margin-right: 16px;
+}
+
+h3.blog-details-title.two {
+  font-size: 28px;
+  margin: 38px 0 16px;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+}
+
+.blog-details-comment-title h4 {
+  font-size: 28px;
+  margin: 20px 0 28px;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+}
+
+.blog-details-comment.style-two {
+  margin-left: 105px;
+}
+
+.blog-details-comment {
+  margin-bottom: 19px;
+  position: relative;
+  border: 1px solid #22222214;
+  padding: 29px 29px 25px;
+}
+
+.blog-details-comment-reply {
+  position: absolute;
+  right: 22px;
+  top: 21px;
+}
+
+.blog-details-comment-reply a {
+  background: #97aa85;
+  padding: 3px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.blog-details-comment-thumb {
+  float: left;
+  margin-right: 30px;
+}
+
+.blog-details-comment-content {
+  overflow: hidden;
+}
+
+.blog-details-comment-content span {
+  display: inline-block;
+  color: #232323;
+}
+
+.blog-details-comment-content h2 {
+  font-size: 20px;
+  margin-top: 0;
+  display: inline-block;
+  margin-right: 30px;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+}
+
+.blog-details-comment-content p {
+  font-size: 15px;
+  margin: 13px 0 0;
+  color: #232323;
+}
+
+p.blog-details-desc.three {
+  width: 100%;
+}
+
+.blog-details-socila-box {
+  border: 1px solid #2222;
+  border-top: transparent;
+  padding: 19px 35px 18px;
+  border-radius: 0 0 5px 5px;
+}
+
+.blog-details-category span a {
+  display: inline-block;
+  background: #f4f4f4;
+  padding: 6px 16px;
+  font-weight: 500;
+  color: #001819;
+  border-radius: 3px;
+  margin-right: 7px;
+  transition: 0.5s;
+}
+
+.blog-details-category span a:hover {
+  background: #97aa85;
+  color: #fff;
+}
+
+.blog-details-category span a.active-class {
+  background: #97aa85;
+  color: #fff;
+}
+
+.blog-details-social-icon {
+  text-align: right;
+}
+
+.blog-details-social-icon ul li {
+  display: inline-block;
+}
+
+.blog-details-social-icon ul li i {
+  display: inline-block;
+  background: #97aa85;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.blog-details-social-icon ul li:nth-child(2) i {
+  background: #00aff5;
+}
+
+.blog-details-social-icon ul li:nth-child(3) i {
+  background: #050a1e;
+}
+
+.blog-details-social-icon ul li:nth-child(4) i {
+  background: #b7071c;
+}
+
+/* details form */
+.blog-details-contact-title h4 {
+  font-size: 23px;
+  font-weight: 600;
+  padding-bottom: 31px;
+  font-family: "Josefin Sans";
+}
+
+.blog-details-area .contact-input-box input {
+  background: #fff;
+  border: transparent;
+  width: 100%;
+  height: 60px;
+  padding: 22px;
+  outline: 0;
+  margin-bottom: 11px;
+}
+
+.blog-details-area .contact-input-box textarea {
+  background: #fff;
+  border: transparent;
+  width: 100%;
+  height: 170px;
+  padding: 12px 22px 0;
+  outline: 0;
+  margin-top: 11px;
+  margin-bottom: 20px;
+}
+
+.blog-details-area input::placeholder {
+  color: #232323;
+}
+
+.input-check-box span {
+  font-size: 15px;
+  margin-left: 7px;
+  color: #232323;
+}
+
+.blog-details-submi-button button {
+  background: #97aa85;
+  color: #fff;
+  text-transform: uppercase;
+  border: transparent;
+  padding: 12px 26px;
+  font-size: 15px;
+  margin-top: 34px;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+  border: 2px solid #97aa85;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.blog-details-submi-button button:hover {
+  color: #97aa85;
+}
+
+.blog-details-submi-button button:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  background: #fff;
+  transition: 0.5s;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.blog-details-submi-button button:hover:before {
+  width: 100%;
+  left: 0;
+}
+
+/*---=====================================================
+<!--start lavewell service details css-->
+=========================================================---*/
+.service-details-area {
+  padding: 100px 0 100px;
+}
+
+.services-details-thumb {
+  position: relative;
+}
+
+.services-details-thumb::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(34, 32, 71, 0.5);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.services-details-thumb img {
+  width: 100%;
+}
+
+.service-video-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: inline-block;
+  z-index: 9;
+}
+
+.service-video-icon a {
+  display: inline-block;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 83px;
+  height: 83px;
+  border-radius: 83px;
+  line-height: 93px;
+  text-align: center;
+  font-size: 30px;
+  -webkit-animation: spineerb 2s infinite;
+  animation: spineerb 2s infinite;
+}
+
+.services-details-content h4 {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-family: "Josefin Sans";
+}
+
+p.services-details-desc {
+  color: #232323;
+}
+
+.service-detalis-text-box h4 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-family: "Josefin Sans";
+}
+
+.service-details-content h5 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: "Josefin Sans";
+}
+
+.service-details-content p {
+  color: #232323;
+}
+
+.service-details-content {
+  margin-bottom: 30px;
+  padding: 26px;
+  border: 1px solid #ebebeb;
+}
+
+p.details-desc,
+.service-details-des {
+  color: #232323;
+  margin: 20px 0;
+}
+
+.widget-instagram ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.widget-instagram img {
+  width: 100%;
+}
+
+/*============================
+/* Scroll Up Css 
+==============================*/
+
+#progress {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: grid;
+  place-items: center;
+  z-index: 99999;
+  cursor: pointer;
+}
+
+.progress.hide {
+  display: none !important;
+  transition: 0.5s !important;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+#container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* Start  Curser pointer CSS */
+
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 50%;
+  border: 2px solid #97aa85;
+  transition: 0.3s;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1000;
+}
+.cursor2 {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.grow,
+.grow-small {
+  transform: scale(3);
+  background: white;
+  mix-blend-mode: difference;
+  border: none;
+}
+
+.grow-small {
+  transform: scale(1.7);
+}
+
+/* End curser point */
+
+/*===========================
+<-- lavewellro Loader Css -->
+=============================*/
+#loading {
+  background-color: #97aa85;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  margin-top: 0px;
+  top: 0px;
+}
+#loading-center {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#loading-center-absolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 200px;
+  width: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  -ms-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.object {
+  -moz-border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+  position: absolute;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #fff;
+  border-right: 5px solid transparent;
+
+  -webkit-animation: animate 2s infinite;
+  animation: animate 2s infinite;
+}
+
+#object_one {
+  left: 75px;
+  top: 75px;
+  width: 50px;
+  height: 50px;
+}
+
+#object_two {
+  left: 65px;
+  top: 65px;
+  width: 70px;
+  height: 70px;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+#object_three {
+  left: 55px;
+  top: 55px;
+  width: 90px;
+  height: 90px;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+#object_four {
+  left: 45px;
+  top: 45px;
+  width: 110px;
+  height: 110px;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+@-webkit-keyframes animate {
+  50% {
+    -ms-transform: rotate(360deg) scale(0.8);
+    -webkit-transform: rotate(360deg) scale(0.8);
+    transform: rotate(360deg) scale(0.8);
+  }
+}
+
+@keyframes animate {
+  50% {
+    -ms-transform: rotate(360deg) scale(0.8);
+    -webkit-transform: rotate(360deg) scale(0.8);
+    transform: rotate(360deg) scale(0.8);
+  }
+}
