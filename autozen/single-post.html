@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Post - Autozen</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Animation On Scroll (AOS) -->
+  <link rel="stylesheet" href="css/vendor/aos.css">
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href="css/vendor/slick.css">
+  <!-- FANCYBOX CSS  -->
+  <link rel="stylesheet" href="css/vendor/fancybox.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header border-bottom-color">
+    <div class="border-bottom-color top-header d-none d-md-block">
+      <div class="b-container">
+        <div
+          class="d-flex justify-content-between align-items-center p-3 border-1 border-start border-end border-primary-color">
+          <ul class="p-0 m-0 d-flex gap-3 gap-lg-5">
+            <li class="list-unstyled">
+              <i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+              +1 800 123 4567
+            </li>
+            <li class="list-unstyled">
+              <i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+              support@autozen.com
+            </li>
+            <li class="list-unstyled">
+              <i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+              Mon-Sat: 08.00 - 18.00
+            </li>
+          </ul>
+          <div class="d-flex gap-2 justify-content-center justify-content-md-start">
+            <a href="#"><i class="bi bi-facebook icon-social"></i></a>
+            <a href=""> <i class="bi bi-instagram icon-social"></i></a>
+            <a href=""><i class="bi bi-twitter icon-social"></i></a>
+            <a href=""><i class="bi bi-youtube icon-social"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-container">
+      <nav class="navbar navbar-expand-lg border-1 border-start border-end border-primary-color py-3 py-lg-1"
+        aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+          <div class="logo-box">
+            <a class="navbar-brand" href="index.html"><img src="images/car-shop-logo-V49ANM.png" alt="Main Logo"
+                class="img-fluid"></a>
+          </div>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start bg-accent-color-2" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header" id="offcanvasNavbarLabel">
+              <div class="logo-box">
+                <a class="navbar-brand" href="index.html"><img src="images/car-shop-logo-V49ANM.png" alt="Drawer Logo"
+                    class="img-fluid"></a>
+              </div>
+              <button type="button" class="btn-close bg-accent-color-2 p-3" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-row justify-content-start justify-content-lg-end">
+              <ul class="navbar-nav my-lg-4 gap-lg-2 gap-xl-4">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="about-us.html" role="button" aria-expanded="false">About Us
+                    <i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Services
+                    <i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="service-details.html">Service Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="services.html" role="button"
+                    aria-expanded="false">Pages
+                    <i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                    <li><a class="dropdown-item" href="our-process.html">Our Process</a></li>
+                    <li><a class="dropdown-item" href="pricing-plan.html">Pricing Plan</a></li>
+                    <li><a class="dropdown-item" href="appointment.html">Appointment</a></li>
+                    <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                    <li><a class="dropdown-item" href="404.html">404</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" href="blog.html" role="button" aria-expanded="false">Blog
+                    <i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item active" href="single-post.html">Single Post</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+              <div class="mt-3">
+                <a href="contact-us.html" class="btn btn-lg btn-cta-primary d-none d-lg-block ms-4">Get
+                  a Quotes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- #header end -->
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Banner -->
+    <section class="section position-relative"
+      style="background-image: url('images/1920x1280.jpg');">
+      <div class="bg-overlay-4"></div>
+      <div class="b-container h-100 position-relative z-2">
+        <div class="d-flex flex-column justify-content-center align-items-center mx-auto text-center text-white gap-4"
+          style="max-width: 895px;">
+          <h1 class="heading fw-bold" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000">
+            SINGLE POST
+          </h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Single Post</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- #banner -->
+
+    <!-- Single Post Content -->
+    <section class="section bg-color">
+      <div class="b-container">
+        <div class="row">
+          <div class="col-12 col-xl-8 pe-xl-4">
+            <div class="d-flex flex-column gap-4">
+              <img src="images/1920x1280.jpg"
+                alt="car-detailing-concept" class="w-100 rounded-4" style="max-height: 458px;">
+              <div class="d-flex flex-row flex-wrap justify-content-between border-1 border-bottom-color border-primary-color pb-3">
+                <ul class="d-flex align-items-center m-0 p-0">
+                  <li class="list-unstyled me-5 d-flex align-items-center">
+                    <i class="bi bi-person text-primary-color fs-4 me-2"></i>
+                    Pai
+                  </li>
+                  <li class="list-unstyled d-flex align-items-center">
+                    <i class="bi bi-folder2-open text-primary-color fs-5 me-2"></i>
+                    Vehicle Care
+                  </li>
+                </ul>
+                <ul class="d-flex align-items-center m-0 p-0">
+                  <li class="list-unstyled d-flex align-items-center">
+                    <i class="bi bi-calendar4 text-primary-color fs-5 me-2"></i>
+                    April 18, 2025
+                  </li>
+                </ul>
+              </div>
+              <h2 class="mb-0">Complete Vehicle Maintenance Guide For Beginners</h2>
+              <p class="mb-0">Taking care of your vehicle doesn’t need to be complicated. With just a basic understanding of car maintenance, you can extend your vehicle’s lifespan, improve performance, and avoid costly repairs. Whether you’re new to driving or simply want to feel more confident about your car care routine, this guide covers all the essential steps every car owner should know. Regular maintenance begins with the essentials: checking your engine oil, coolant, brake fluid, and windshield washer fluid. These simple checks can prevent serious issues from developing over time. Make it a habit to inspect fluid levels at least once a month, and always top off or replace them as needed.</p>
+              <p class="mb-0">Your tires play a critical role in safety and fuel efficiency. Keep them properly inflated, rotate them every 8,000 to 10,000 kilometers, and check for signs of wear or damage. A quick visual inspection each week can save you from blowouts or poor handling on the road. Car batteries typically last 3 to 5 years. Corroded terminals or weak starts are signs that it might be time for a replacement. Cleaning battery contacts and testing voltage periodically will ensure your car starts reliably every time.</p>
+              <div class="d-flex flex-column gap-3 bg-primary-color rounded-4 p-4 mt-5">
+                <div class="d-flex align-items-center justify-content-center icon-quote">
+                  <i class="bi bi-quote fs-1"></i>
+                </div>
+                <p class="text-big mb-0">”The service was exceptional from start to finish. My car looks and feels brand new again. The team was professional, efficient, and paid attention to every detail. I’ll definitely be coming back!“</p>
+                <div class="d-flex flex-column">
+                  <p class="text-big fw-bold mb-0">Jhon Doe</p>
+                  <p class="mb-0 text-small">Admin AUTOZEN</p>
+                </div>
+              </div>
+              <p class="mb-0">If you hear squeaking or grinding when braking, or feel vibrations, don’t wait — have your brake system inspected. Replacing brake pads or servicing the rotors in time can prevent further damage and keep you safe. Engine and cabin air filters should be checked regularly. A dirty engine filter can reduce fuel efficiency, while a clogged cabin filter affects air quality inside the car. Replacing them is easy and affordable — and makes a noticeable difference.</p>
+              <p class="mb-0">Follow your vehicle’s maintenance schedule outlined in the owner’s manual. Services like oil changes, spark plug replacement, and transmission checks are crucial. Skipping these can lead to engine wear and performance issues down the line. You don’t have to be a mechanic to catch early signs of trouble. Look out for leaks under your car, unusual noises, dashboard warning lights, or changes in driving performance. Addressing small issues early often prevents big repairs later.</p>
+            </div>
+          </div>
+          <div class="col-12 col-xl-4 ps-xl-4">
+            <div class="d-flex flex-column flex-xl-column flex-lg-row gap-4 mt-4 mt-xl-0">
+              <div class="bg-accent-color-2 p-4 rounded-4 d-flex flex-column flex-fill gap-2">
+                <h3 class="mb-0 text-center">RECENT BLOG</h3>
+                <hr class="border-1 text-primary-color opacity-100">
+                <div class="recent card blog position-relative flex flex-row bg-secondary-color mb-3">
+                  <a href="single-post.html">
+                    <img src="images/104x104.jpg" alt="worker-cleaning-automobile-air-conditioner-vent-gr" class="rounded-top-4" style="width: 104px; height: 104px;">
+                  </a>
+                  <div class="blog-content p-2 d-flex flex-column justify-content-center">
+                    <ul class="d-flex align-items-center m-0 p-0">
+                      <li class="list-unstyled text-small d-flex align-items-center">
+                        <i class="bi bi-calendar4 text-small text-primary-color fs-5 me-2"></i>
+                        April 18, 2025
+                      </li>
+                    </ul>
+                    <a href="single-post.html">
+                      <p class="mt-1 mb-0">Tips To Keep Your Car Glass Spotless</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="recent card blog position-relative flex flex-row bg-secondary-color mb-3">
+                  <a href="single-post.html">
+                    <img src="images/104x104.jpg" alt="worker-cleaning-automobile-air-conditioner-vent-gr" class="rounded-top-4" style="width: 104px; height: 104px;">
+                  </a>
+                  <div class="blog-content p-2 d-flex flex-column justify-content-center">
+                    <ul class="d-flex align-items-center m-0 p-0">
+                      <li class="list-unstyled text-small d-flex align-items-center">
+                        <i class="bi bi-calendar4 text-small text-primary-color fs-5 me-2"></i>
+                        April 18, 2025
+                      </li>
+                    </ul>
+                    <a href="single-post.html">
+                      <p class="mt-1 mb-0">Headlight Restoration Steps You Can Do Yourself</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="recent card blog position-relative flex flex-row bg-secondary-color mb-3">
+                  <a href="single-post.html">
+                    <img src="images/104x104.jpg" alt="worker-cleaning-automobile-air-conditioner-vent-gr" class="rounded-top-4" style="width: 104px; height: 104px;">
+                  </a>
+                  <div class="blog-content p-2 d-flex flex-column justify-content-center">
+                    <ul class="d-flex align-items-center m-0 p-0">
+                      <li class="list-unstyled text-small d-flex align-items-center">
+                        <i class="bi bi-calendar4 text-small text-primary-color fs-5 me-2"></i>
+                        April 18, 2025
+                      </li>
+                    </ul>
+                    <a href="single-post.html">
+                      <p class="mt-1 mb-0">Why Tire Maintenance Is Important For Safety</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="recent card blog position-relative flex flex-row bg-secondary-color mb-3">
+                  <a href="single-post.html">
+                    <img src="images/104x104.jpg" alt="worker-cleaning-automobile-air-conditioner-vent-gr" class="rounded-top-4" style="width: 104px; height: 104px;">
+                  </a>
+                  <div class="blog-content p-2 d-flex flex-column justify-content-center">
+                    <ul class="d-flex align-items-center m-0 p-0">
+                      <li class="list-unstyled text-small d-flex align-items-center">
+                        <i class="bi bi-calendar4 text-small text-primary-color fs-5 me-2"></i>
+                        April 18, 2025
+                      </li>
+                    </ul>
+                    <a href="single-post.html">
+                      <p class="mt-1 mb-0">Common Auto Repair Mistakes To Avoid Now</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="recent card blog position-relative flex flex-row bg-secondary-color">
+                  <a href="single-post.html">
+                    <img src="images/104x104.jpg" alt="worker-cleaning-automobile-air-conditioner-vent-gr" class="rounded-top-4" style="width: 104px; height: 104px;">
+                  </a>
+                  <div class="blog-content p-2 d-flex flex-column justify-content-center">
+                    <ul class="d-flex align-items-center m-0 p-0">
+                      <li class="list-unstyled text-small d-flex align-items-center">
+                        <i class="bi bi-calendar4 text-small text-primary-color fs-5 me-2"></i>
+                        April 18, 2025
+                      </li>
+                    </ul>
+                    <a href="single-post.html">
+                      <p class="mt-1 mb-0">Interior Car Cleaning Tips Every Driver Needs</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="px-4 pb-4 rounded-4 flex-fill position-relative img-background"
+                style="background-image: url('images/296x550.jpg'); padding-top: 150px">
+                <div class="bg-overlay-2 z-1 rounded-4"></div>
+                <div class="d-flex flex-column gap-4 z-1 position-relative">
+                  <h3 class="mb-0 text-center">WANT YOUR CAR PROFESSIONALLY MAINTAINED?</h3>
+                  <p class="mb-0 text-center">Let our experts handle it while you relax.</p>
+                  <ul class="p-0 m-0">
+                    <li class="list-unstyled mb-2 text-center">
+                      <i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                      Full Detailing
+                    </li>
+                    <li class="list-unstyled mb-2 text-center">
+                      <i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                      Preventive Maintenance
+                    </li>
+                    <li class="list-unstyled text-center">
+                      <i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                      Interior & Exterior Services
+                    </li>
+                  </ul>
+                  <a href="#" class="btn btn-cta-primary w-100 py-3 d-flex align-items-center justify-content-center">
+                    MAKE A APPOINTMENT
+                    <span class="bg-white rounded-circle d-inline-flex align-items-center justify-content-center ms-2"
+                      style="width: 15px; height: 15px;">
+                      <i class="bi bi-chevron-right text-primary-color" style="font-size:10px"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- #single post content -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="b-container">
+        <div class="row g-4 g-xl-5 mt-0 mx-auto ptpb-120">
+
+          <div class="col-12 col-md-6 col-xl-3 mt-0 px-auto px-xl-0">
+            <div class="footer-logo-box">
+              <img src="images/car-shop-logo-V49ANM.png" alt="Footer Logo" class="h-100 object-fit-contain d-block">
+            </div>
+            <p class="mt-4 text-center text-md-start">Driven by excellence in auto care, delivering expert detailing, quality repair, and lasting protection for every vehicle we serve.</p>
+            <div class="d-flex gap-2 justify-content-center justify-content-md-start">
+              <a href="#"><i class="bi bi-facebook icon-social"></i></a>
+              <a href=""> <i class="bi bi-instagram icon-social"></i></a>
+              <a href=""><i class="bi bi-twitter icon-social"></i></a>
+              <a href=""><i class="bi bi-youtube icon-social"></i></a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-2 mt-5 mt-xl-0">
+            <h4 class="text-center text-md-start">QUICK LINKS</h4>
+            <hr class="border-1 max-w-170 text-primary-color opacity-100 mx-auto mx-md-0">
+            <ul class="p-0 m-0 d-flex flex-column align-items-center align-items-md-start">
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Home</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  About Us</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Services</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Our Project</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Pricing Plan</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3 mt-5 mt-xl-0 pe-0">
+            <h4 class="text-center text-md-start">SERVICES</h4>
+            <div class="w-100">
+              <hr class="border-1 max-w-170 text-primary-color opacity-100 mx-auto mx-md-0">
+            </div>
+            <ul class="p-0 m-0 d-flex flex-column align-items-center align-items-md-start">
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Car Detailing</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Paint Protection</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Interior Deep Cleaning</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Engine Bay Cleaning</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Fleet Services</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Collision Repair</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4 mt-5 mt-xl-0 ps-0">
+            <h4 class="text-center text-md-start">CONTACT INFO</h4>
+            <hr class="border-1 max-w-170 text-primary-color opacity-100 mx-auto mx-md-0">
+            <div class="d-flex mb-4 flex-column flex-md-row align-items-center align-items-md-start">
+              <a href="#" class="icon-contact me-0 me-md-3"><i class="bi bi-telephone fs-3"></i></a>
+              <div class="d-flex flex-column text-center text-md-start">
+                <p class="text-small text-color-3 mb-1">PHONE NUMBER</p>
+                <h5 class="mb-0">+1 (800) 123-4567</h5>
+              </div>
+            </div>
+            <div class="d-flex mb-4 flex-column flex-md-row align-items-center align-items-md-start">
+              <a href="#" class="icon-contact me-0 me-md-3"><i class="bi bi-envelope fs-3"></i></a>
+              <div class="d-flex flex-column text-center text-md-start">
+                <p class="text-small text-color-3 mb-1">EMAIL ADDRESS</p>
+                <h5 class="mb-0">hello@autozen.com</h5>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
+              <a href="#" class="icon-contact me-0 me-md-3"><i class="bi bi-geo-alt fs-3"></i></i></a>
+              <div class="d-flex flex-column text-center text-md-start">
+                <p class="text-small text-color-3 mb-1">GARAGE ADDRESS</p>
+                <h5 class="mb-0">123 AutoZen Blvd, New York, NY</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-top-color">
+        <div class="b-container border-start border-end border-1 border-primary-color p-3">
+          <div class="d-flex flex-row flex-wrap justify-content-center justify-content-md-between">
+            <p class="text-color-3 m-0">© 2025 Nomaden Studio. All Rights Reserved.</p>
+            <ul class="m-0 p-0 d-flex gap-3 footer-terms">
+              <li class="list-unstyled"><a href="#"
+                  class="text-color-3 border-end border-1 border-primary-color pe-3">Terms &
+                  Conditions</a></li>
+              <li class="list-unstyled"><a href="#" class="text-color-3">Paint Protection</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- #footer -->
+
+
+  </main>
+  <!-- End Main Content -->
+
+
+  <!-- Scripts -->
+  <!-- jQuery -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <!-- Animation On Scroll (AOS) -->
+  <script src="js/vendor/aos.js"></script>
+  <!-- Slick JS -->
+  <script src="js/vendor/slick.min.js"></script>
+  <!-- FANCY BOX -->
+  <script src="js/vendor/fancybox.umd.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script-counter.js"></script>
+  <script src="js/submit-form.js"></script>
+  <script src="js/script.js"></script>
+  <!-- End Scripts -->
+</body>
+
+</html>

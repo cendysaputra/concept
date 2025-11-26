@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment - Autozen</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Animation On Scroll (AOS) -->
+  <link rel="stylesheet" href="css/vendor/aos.css">
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href="css/vendor/slick.css">
+  <!-- FANCYBOX CSS  -->
+  <link rel="stylesheet" href="css/vendor/fancybox.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header border-bottom-color">
+    <div class="border-bottom-color top-header d-none d-md-block">
+      <div class="b-container">
+        <div
+          class="d-flex justify-content-between align-items-center p-3 border-1 border-start border-end border-primary-color">
+          <ul class="p-0 m-0 d-flex gap-3 gap-lg-5">
+            <li class="list-unstyled">
+              <i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+              +1 800 123 4567
+            </li>
+            <li class="list-unstyled">
+              <i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+              support@autozen.com
+            </li>
+            <li class="list-unstyled">
+              <i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+              Mon-Sat: 08.00 - 18.00
+            </li>
+          </ul>
+          <div class="d-flex gap-2 justify-content-center justify-content-md-start">
+            <a href="#"><i class="bi bi-facebook icon-social"></i></a>
+            <a href=""> <i class="bi bi-instagram icon-social"></i></a>
+            <a href=""><i class="bi bi-twitter icon-social"></i></a>
+            <a href=""><i class="bi bi-youtube icon-social"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-container">
+      <nav class="navbar navbar-expand-lg border-1 border-start border-end border-primary-color py-3 py-lg-1"
+        aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+          <div class="logo-box">
+            <a class="navbar-brand" href="index.html"><img src="images/car-shop-logo-V49ANM.png" alt="Main Logo"
+                class="img-fluid"></a>
+          </div>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start bg-accent-color-2" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header" id="offcanvasNavbarLabel">
+              <div class="logo-box">
+                <a class="navbar-brand" href="index.html"><img src="images/car-shop-logo-V49ANM.png" alt="Drawer Logo"
+                    class="img-fluid"></a>
+              </div>
+              <button type="button" class="btn-close bg-accent-color-2 p-3" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-row justify-content-start justify-content-lg-end">
+              <ul class="navbar-nav my-lg-4 gap-lg-2 gap-xl-4">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <div class="d-flex align-items-center">
+                    <a class="nav-link" href="about-us.html">
+                      About Us
+                    </a>
+                    <a class="nav-link dropdown-toggle icon-submenu" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <div class="d-flex align-items-center">
+                    <a class="nav-link" href="services.html">
+                      Services
+                    </a>
+                    <a class="nav-link dropdown-toggle icon-submenu" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="service-details.html">Service Details</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <div class="d-flex align-items-center">
+                    <a class="nav-link active" href="#">
+                      Pages
+                    </a>
+                    <a class="nav-link dropdown-toggle icon-submenu" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                      <li><a class="dropdown-item" href="our-process.html">Our Process</a></li>
+                      <li><a class="dropdown-item" href="pricing-plan.html">Pricing Plan</a></li>
+                      <li><a class="dropdown-item active" href="appointment.html">Appointment</a></li>
+                      <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                      <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                      <li><a class="dropdown-item" href="404.html">404</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <div class="d-flex align-items-center">
+                    <a class="nav-link" href="blog.html">
+                      Blog
+                    </a>
+                    <a class="nav-link dropdown-toggle icon-submenu" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="single-post.html">Single Post</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+              <div class="mt-3">
+                <a href="contact-us.html" class="btn btn-lg btn-cta-primary d-none d-lg-block ms-4">Get a Quotes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- #header end -->
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Banner -->
+    <section class="section position-relative"
+      style="background-image: url('images/1920x1280.jpg');">
+      <div class="bg-overlay-4"></div>
+      <div class="b-container h-100 position-relative z-2">
+        <div class="d-flex flex-column justify-content-center align-items-center mx-auto text-center text-white gap-4"
+          style="max-width: 895px;">
+          <h1 class="heading fw-bold" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000">APPOINTMENT
+          </h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Appointment</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- #banner -->
+
+    <!-- Appointment -->
+    <section class="section padtop">
+      <div class="b-container">
+        <div class="row">
+          <div class="col-12 col-xl-8 pe-xl-4">
+            <div class="row mb-0 mb-xl-5">
+              <div class="col-12 col-md-6 col-xl-5 pe-xl-4">
+                <div class="bg-accent-color-2 p-4 rounded-4 mb-5 mb-md-0" data-aos="fade-right" data-aos-delay="600"
+                  data-aos-duration="1000">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-car-front-fill fs-4 me-3 text-primary-color"></i>
+                    <span class="subtitle">ABOUT AUTOZEN</span>
+                  </div>
+                  <h3 class="my-3">Schedule your visit in just a few clicks.</h3>
+                  <p>Booking your car detailing or repair service has never been easier. Simply fill out our user-friendly form to choose your preferred time, select your services, and confirm your appointment—all in minutes.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-7 ps-xl-4">
+                <div class="w-100 h-100 position-relative" data-aos="fade-down" data-aos-delay="300"
+                  data-aos-duration="1000">
+                  <video class="w-100 h-100 object-fit-cover rounded-4" autoplay muted loop>
+                    <source src="videos/videoplayback.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="bg-overlay"></div>
+                  <div class="position-absolute top-50 start-50 translate-middle">
+                    <a href="https://youtu.be/0i764CNCKwo?si=kti8PalSJtPZMZRm" data-fancybox="video-gallery">
+                      <i class="bi bi-play-circle-fill fs-80 text-primary-color"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row my-5 my-xl-0">
+              <div class="col">
+                <div class="position-relative p-0 py-4 border-general rounded-4 bg-accent-color-2" data-aos="fade-up"
+                  data-aos-delay="900" data-aos-duration="1000">
+                  <div class="client-logos">
+                    <img src="images/198x52.jpg" alt="client 1" class="opacity-75">
+                    <img src="images/198x52.jpg" alt="client 2" class="opacity-75">
+                    <img src="images/198x52.jpg" alt="client 3" class="opacity-75">
+                    <img src="images/198x52.jpg" alt="client 4" class="opacity-75">
+                    <img src="images/198x52.jpg" alt="client 5" class="opacity-75">
+                    <img src="images/198x52.jpg" alt="client 6" class="opacity-75">
+                    <img src="images/198x52.jpg" alt="client 7" class="opacity-75">
+                    <img src="images/198x52.jpg" alt="client 8" class="opacity-75">
+                  </div>
+                  <div class="bg-overlay"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-4 ps-xl-4">
+            <div class="bg-accent-color-2 rounded-4 p-4" data-aos="fade-left" data-aos-delay="200"
+              data-aos-duration="1000">
+              <h4 class="text-center">Book Your Car Detailing or Repair Appointment Today</h4>
+              <div
+                class="success_msg toast align-items-center w-100 shadow-none mb-3 border border-success rounded-pill my-4"
+                role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex p-2">
+                  <div class="toast-body d-flex flex-row gap-3 align-items-center text-success">
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                    Your Message Successfully Send.
+                  </div>
+                  <button type="button" class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-success"
+                    data-bs-dismiss="toast" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                </div>
+              </div>
+              <div
+                class="error_msg toast align-items-center w-100 shadow-none border-danger mb-3 my-4 border rounded-pill"
+                role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex p-2">
+                  <div class="toast-body d-flex flex-row gap-3 align-items-center text-danger">
+                    <i class="bi bi-exclamation-triangle-fill text-danger"></i>
+                    Something Wrong ! Send Form Failed.
+                  </div>
+                  <button type="button" class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-danger"
+                    data-bs-dismiss="toast" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                </div>
+              </div>
+              <form class="form needs-validation">
+                <div class="row mb-2">
+                  <div class="col-12 mb-4">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" name="name" id="name" class="form-control form-control-lg"
+                      placeholder="Enter your full name" aria-label="Name">
+                  </div>
+                  <div class="col-12 mb-4">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control form-control-lg"
+                      placeholder="Enter your mail" aria-label="Email">
+                  </div>
+                  <div class="col-12 mb-4">
+                    <select class="form-select form-control-lg" name="service" aria-label="Default select">
+                      <option selected>Select a service</option>
+                      <option value="1">Car Wash</option>
+                      <option value="2">Interior Detailing</option>
+                      <option value="3">Engine Repair</option>
+                      <option value="4">Body Polishing</option>
+                      <option value="5">Full Services</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control form-control-lg" name="message" id="message" rows="8"
+                      placeholder="Describe your issue or request"></textarea>
+                  </div>
+                </div>
+                <button type="submit"
+                  class="btn btn-cta-primary w-100 d-inline-flex py-3 d-flex align-items-center justify-content-center submit_form">
+                  Book Appointment Now
+                  <span class="btn-icon rounded-circle d-inline-flex align-items-center justify-content-center ms-2">
+                    <i class="bi bi-chevron-right text-white" style="font-size:10px"></i>
+                  </span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #appointment -->
+
+    <!-- Why Choose Us -->
+    <section class="section padtop bg-accent-color-2 position-relative">
+      <div class="b-container">
+        <div class="row m-0 p-0 px-md-20">
+          <div class="col-12 col-md-6 col-xl-3 p-0">
+            <div class="why-box active">
+              <div class="why-box-inner bg-primary-color" data-aos="fade-right" data-aos-delay="0"
+                data-aos-duration="0">
+                <i class="bi bi-patch-check why-icon text-primary-color mb-3"></i>
+                <h4>CERTIFIED TECHNICIANS</h4>
+                <p>Certified technicians with proven skills and experience to handle every car with expert care and attention to detail.</p>
+                <a href="#" class="links-primary text-primary-color">Read More<i
+                    class="bi bi-arrow-right-circle ms-3"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 p-0">
+            <div class="why-box">
+              <div class="why-box-inner" data-aos="fade-right" data-aos-delay="300" data-aos-duration="0">
+                <i class="bi bi-award why-icon text-primary-color mb-3"></i>
+                <h4>MOD12ERN EQUIPMENT</h4>
+                <p>State-of-the-art tools and advanced technology ensure high-quality results for both detailing and repair services.</p>
+                <a href="#" class="links-primary text-primary-color">Read More<i
+                    class="bi bi-arrow-right-circle ms-3"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 p-0">
+            <div class="why-box">
+              <div class="why-box-inner" data-aos="fade-right" data-aos-delay="600" data-aos-duration="0">
+                <i class="bi bi-rocket-takeoff why-icon text-primary-color mb-3"></i>
+                <h4>FAST TURNAROUND TIME</h4>
+                <p>Quick and efficient service process designed to get your vehicle back on the road in the shortest time possible.</p>
+                <a href="#" class="links-primary text-primary-color">Read More<i
+                    class="bi bi-arrow-right-circle ms-3"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 p-0">
+            <div class="why-box">
+              <div class="why-box-inner" data-aos="fade-right" data-aos-delay="900" data-aos-duration="0">
+                <i class="bi bi-gear why-icon text-primary-color mb-3"></i>
+                <h4>FLEET SERVICES</h4>
+                <p>Comprehensive solutions for fleet maintenance and detailing with consistent quality and reliable scheduling support.</p>
+                <a href="#" class="links-primary text-primary-color">Read More<i
+                    class="bi bi-arrow-right-circle ms-3"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #why choose us end -->
+
+    <!-- How It Work -->
+    <section class="section bg-color">
+      <div class="b-container">
+        <div class="row d-flex align-items-center">
+          <div class="col-12 col-xl-6 pe-xl-4" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+            <img src="images/1920x1280.jpg"
+              alt="worker-cleaning-modern-vehicle-alloy-wheels" class="w-100 rounded-4 mb-5 mb-xl-0" height="700px">
+          </div>
+          <div class="col-12 col-xl-6 ps-xl-4" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-car-front-fill fs-4 me-3 text-primary-color"></i>
+              <span class="subtitle">OUR PROCESS</span>
+            </div>
+            <h2 class="my-4">SIMPLE PROCESS FOR MAXIMUM SATISFACTION</h2>
+            <p>From booking to completion, we make car care easy, transparent, and efficient. Here's how AUTOZEN
+              delivers top-tier service every time.</p>
+            <div class="accordion mt-4" id="accordionExample">
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    01. Book Your Appointment
+                  </button>
+                </h5>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body ps-0 pt-4">
+                    <p class="m-0">Schedule your service online or via phone at your convenience. Choose your preferred
+                      date, time, and service package easily.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    02. Vehicle Inspection & Consultation
+                  </button>
+                </h5>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body ps-0 pt-4">
+                    <p>Our experts will inspect your vehicle and recommend the best treatments. We ensure clarity on
+                      pricing and procedures before we begin.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    03. Service in Action
+                  </button>
+                </h5>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body ps-0 pt-4">
+                    <p>Our certified team performs the service with precision and care. Whether it's detailing, coating,
+                      or repair—quality is guaranteed.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    04. Final Review & Delivery
+                  </button>
+                </h5>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body ps-0 pt-4">
+                    <p>Before handover, we conduct a final check to ensure everything's perfect. You drive away with a
+                      spotless, rejuvenated vehicle.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #how it work -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="b-container">
+        <div class="row g-4 g-xl-5 mt-0 mx-auto ptpb-120">
+
+          <div class="col-12 col-md-6 col-xl-3 mt-0 px-auto px-xl-0">
+            <div class="footer-logo-box">
+              <img src="images/car-shop-logo-V49ANM.png" alt="Footer Logo" class="h-100 object-fit-contain d-block">
+            </div>
+            <p class="mt-4 text-center text-md-start">Driven by excellence in auto care, delivering expert detailing, quality repair, and lasting protection for every vehicle we serve.</p>
+            <div class="d-flex gap-2 justify-content-center justify-content-md-start">
+              <a href="#"><i class="bi bi-facebook icon-social"></i></a>
+              <a href=""> <i class="bi bi-instagram icon-social"></i></a>
+              <a href=""><i class="bi bi-twitter icon-social"></i></a>
+              <a href=""><i class="bi bi-youtube icon-social"></i></a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-2 mt-5 mt-xl-0">
+            <h4 class="text-center text-md-start">QUICK LINKS</h4>
+            <hr class="border-1 max-w-170 text-primary-color opacity-100 mx-auto mx-md-0">
+            <ul class="p-0 m-0 d-flex flex-column align-items-center align-items-md-start">
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Home</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  About Us</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Services</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Our Project</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Pricing Plan</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3 mt-5 mt-xl-0 pe-0">
+            <h4 class="text-center text-md-start">SERVICES</h4>
+            <div class="w-100">
+              <hr class="border-1 max-w-170 text-primary-color opacity-100 mx-auto mx-md-0">
+            </div>
+            <ul class="p-0 m-0 d-flex flex-column align-items-center align-items-md-start">
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Car Detailing</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Paint Protection</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Interior Deep Cleaning</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Engine Bay Cleaning</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Fleet Services</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Collision Repair</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4 mt-5 mt-xl-0 ps-0">
+            <h4 class="text-center text-md-start">CONTACT INFO</h4>
+            <hr class="border-1 max-w-170 text-primary-color opacity-100 mx-auto mx-md-0">
+            <div class="d-flex mb-4 flex-column flex-md-row align-items-center align-items-md-start">
+              <a href="#" class="icon-contact me-0 me-md-3"><i class="bi bi-telephone fs-3"></i></a>
+              <div class="d-flex flex-column text-center text-md-start">
+                <p class="text-small text-color-3 mb-1">PHONE NUMBER</p>
+                <h5 class="mb-0">+1 (800) 123-4567</h5>
+              </div>
+            </div>
+            <div class="d-flex mb-4 flex-column flex-md-row align-items-center align-items-md-start">
+              <a href="#" class="icon-contact me-0 me-md-3"><i class="bi bi-envelope fs-3"></i></a>
+              <div class="d-flex flex-column text-center text-md-start">
+                <p class="text-small text-color-3 mb-1">EMAIL ADDRESS</p>
+                <h5 class="mb-0">hello@autozen.com</h5>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
+              <a href="#" class="icon-contact me-0 me-md-3"><i class="bi bi-geo-alt fs-3"></i></i></a>
+              <div class="d-flex flex-column text-center text-md-start">
+                <p class="text-small text-color-3 mb-1">GARAGE ADDRESS</p>
+                <h5 class="mb-0">123 AutoZen Blvd, New York, NY</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-top-color">
+        <div class="b-container border-start border-end border-1 border-primary-color p-3">
+          <div class="d-flex flex-row flex-wrap justify-content-center justify-content-md-between">
+            <p class="text-color-3 m-0">© 2025 Nomaden Studio. All Rights Reserved.</p>
+            <ul class="m-0 p-0 d-flex gap-3 footer-terms">
+              <li class="list-unstyled"><a href="#"
+                  class="text-color-3 border-end border-1 border-primary-color pe-3">Terms &
+                  Conditions</a></li>
+              <li class="list-unstyled"><a href="#" class="text-color-3">Paint Protection</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- #footer -->
+
+
+  </main>
+  <!-- End Main Content -->
+
+
+  <!-- Scripts -->
+  <!-- jQuery -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <!-- Animation On Scroll (AOS) -->
+  <script src="js/vendor/aos.js"></script>
+  <!-- Slick JS -->
+  <script src="js/vendor/slick.min.js"></script>
+  <!-- FANCY BOX -->
+  <script src="js/vendor/fancybox.umd.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script-counter.js"></script>
+  <script src="js/submit-form.js"></script>
+  <script src="js/script.js"></script>
+  <!-- End Scripts -->
+</body>
+
+</html>
