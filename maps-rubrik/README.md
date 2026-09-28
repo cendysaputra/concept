@@ -10,6 +10,10 @@ Alternatif: jalankan `npm run dev`, lalu buka `http://127.0.0.1:3011`. Tidak per
 
 Buka melalui server lokal agar browser dapat membaca SVG.
 
+## Mengunggah ke server
+
+Unggah `index.html`, `app.js`, `data.js`, `styles.css`, dan `maps.svg` bersama-sama ke folder yang sama. `index.html` memakai versi pada URL CSS dan JavaScript agar browser mengambil file terbaru. Setelah mengubah aset, perbarui versi URL terkait di `index.html` dan unggah ulang HTML serta aset tersebut.
+
 ## Perilaku
 
 - Klik atau sentuh provinsi untuk menampilkan nama daerah, jumlah perkara, dan kategorinya.
