@@ -76,14 +76,40 @@ const visibleTotal = async (page) => page.locator('#map-container [tabindex="0"]
   assert.equal(await page.locator('#preview-mode').inputValue(), 'color');
   await page.selectOption('#preview-mode', 'green');
   assert.equal(await page.locator('#province_piece_049').getAttribute('fill'), '#4caf50');
-  assert.equal(await visibleTotal(page), '41');
+  assert.equal(await visibleTotal(page), '116');
+  assert.equal(await page.locator('[data-category="high"]').getAttribute('aria-pressed'), 'false');
+  assert.equal(await page.locator('#island-filter').inputValue(), 'Kalimantan');
+  assert.equal(await page.locator('#map-container [tabindex="0"]').count(), 5);
   await page.selectOption('#preview-mode', 'color');
   assert.equal(await page.locator('#province_piece_049').getAttribute('fill'), '#a71923');
+  assert.equal(await page.locator('#province_piece_048').getAttribute('fill'), '#ffc52b');
+  await page.locator('[data-category="high"]').click();
   assert.equal(await page.locator('#province_piece_048').getAttribute('fill'), '#4caf50');
   assert.equal(await visibleTotal(page), '41');
   assert.equal(await page.locator('#map-container [tabindex="0"]').count(), 1);
   assert.equal(await page.locator('#map-popover').isVisible(), false);
 
+  await page.locator('#reset').click();
+
+  // Without an all-category button, active categories can be toggled off.
+  assert.equal(await page.locator('[data-category="all"]').count(), 0);
+  await page.selectOption('#island-filter', 'Sulawesi');
+  await page.selectOption('#year-filter', '2024');
+  for (const category of ['high', 'medium', 'low', 'none']) {
+    const button = page.locator(`[data-category="${category}"]`);
+    await button.click();
+    assert.equal(await button.getAttribute('aria-pressed'), 'true');
+    await button.click();
+    assert.equal(await page.locator('[data-category][aria-pressed="true"]').count(), 0);
+    assert.equal(await page.locator('#map-container [tabindex="0"]').count(), 6);
+    assert.equal(await page.locator('#preview-mode').inputValue(), 'color');
+  }
+  await page.locator('[data-category="none"]').click();
+  await page.selectOption('#preview-mode', 'green');
+  assert.equal(await page.locator('[data-category][aria-pressed="true"]').count(), 0);
+  assert.equal(await page.locator('#map-container [tabindex="0"]').count(), 6);
+  assert.equal(await page.locator('#island-filter').inputValue(), 'Sulawesi');
+  assert.equal(await page.locator('#year-filter').inputValue(), '2024');
   await page.locator('#reset').click();
 
   // Zero cases have their own category across totals, years, details, and information.

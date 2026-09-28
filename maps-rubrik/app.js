@@ -387,6 +387,7 @@
   });
   $('preview-mode').addEventListener('change', (event) => {
     state.preview = event.target.value;
+    if (state.preview === 'green') state.category = 'all';
     changeFilters();
   });
   $('open-information').addEventListener('click', openInformation);
@@ -408,7 +409,7 @@
     navigateRegion(1);
   });
   for (const button of document.querySelectorAll('[data-category]')) button.addEventListener('click', () => {
-    state.category = button.dataset.category;
+    state.category = state.category === button.dataset.category ? 'all' : button.dataset.category;
     if (state.category !== 'all') state.preview = 'color';
     changeFilters();
   });

@@ -15,8 +15,8 @@ Buka melalui server lokal agar browser dapat membaca SVG.
 - Klik atau sentuh provinsi untuk menampilkan nama daerah, jumlah perkara, dan kategorinya.
 - Tombol Informasi muncul setelah memilih kelompok wilayah. Tombol ini membuka popup berisi foto placeholder, nama, jabatan, dan tahun. Daftar mengikuti wilayah, tahun, dan kategori aktif. Tooltip hover dan popup singkat saat klik provinsi tetap tersedia.
 - Semua potongan pulau yang termasuk provinsi yang sama memiliki warna dan detail yang sama.
-- Filter Preview di sebelah Semua kategori menyediakan pilihan Normal (warna default peta) dan Kategori (warna masing-masing kategori). Filter ini mengubah warna tampilan tanpa mengubah data, wilayah, atau tahun.
-- Memilih Tinggi, Sedang, Rendah, atau Tidak ada otomatis mengaktifkan preview Kategori untuk kategori tersebut. Memilih Semua kategori mengikuti mode preview yang aktif. Tombol reset mengembalikan preview Normal.
+- Filter Preview menyediakan pilihan Normal (warna default peta) dan Kategori (warna masing-masing kategori). Memilih Normal melepas filter kategori tanpa mengubah wilayah atau tahun.
+- Memilih Tinggi, Sedang, Rendah, atau Tidak ada otomatis mengaktifkan preview Kategori untuk kategori tersebut. Klik ulang kategori aktif untuk menampilkan semua kategori dengan mode preview yang sama. Tombol reset mengembalikan preview Normal.
 - Merah: 30 perkara atau lebih; oranye: 20–29; kuning: 1–19; hijau: 0 perkara (Tidak ada).
 - Filter kategori dan kelompok wilayah memperbarui peta serta tabel. Memilih kelompok wilayah hanya menampilkan peta wilayah tersebut dan memperbesar tampilannya; semua kelompok wilayah lainnya disembunyikan. Pilihan Semua wilayah menampilkan kembali seluruh peta.
 - Saat kelompok wilayah tertentu dipilih, panah kiri dan kanan pada peta berpindah antarwilayah mengikuti urutan dropdown. Dari Papua, panah kanan kembali ke Sumatera. Filter tahun dan kategori tetap mengikuti pilihan sebelumnya.
