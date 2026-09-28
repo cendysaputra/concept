@@ -28,14 +28,14 @@ const visibleTotal = async (page) => page.locator('#map-container [tabindex="0"]
   assert.equal(model.pieces, 92);
   assert.equal(model.provinces, 34);
   assert.deepEqual(model.errors, []);
-  assert.deepEqual(await page.locator('#map-container g[data-region]').evaluateAll((nodes) => [...new Set(nodes.map((node) => node.getAttribute('fill')))]), ['#ADC3DA']);
-  assert.equal(await page.locator('#preview-mode').inputValue(), 'blue');
+  assert.deepEqual(await page.locator('#map-container g[data-region]').evaluateAll((nodes) => [...new Set(nodes.map((node) => node.getAttribute('fill')))]), ['#4caf50']);
+  assert.equal(await page.locator('#preview-mode').inputValue(), 'green');
   await page.selectOption('#preview-mode', 'color');
-  assert.deepEqual((await page.locator('#map-container g[data-region]').evaluateAll((nodes) => [...new Set(nodes.map((node) => node.getAttribute('fill')))])).sort(), ['#a71923', '#ed8031', '#ffc52b'].sort());
+  assert.deepEqual((await page.locator('#map-container g[data-region]').evaluateAll((nodes) => [...new Set(nodes.map((node) => node.getAttribute('fill')))])).sort(), ['#a71923', '#ed8031', '#ffc52b', '#4caf50'].sort());
   assert.equal(await page.locator('#map-container [tabindex="0"]').count(), 34);
   await screenshot(page, 'color-preview.png');
-  await page.selectOption('#preview-mode', 'blue');
-  assert.deepEqual(await page.locator('#map-container g[data-region]').evaluateAll((nodes) => [...new Set(nodes.map((node) => node.getAttribute('fill')))]), ['#ADC3DA']);
+  await page.selectOption('#preview-mode', 'green');
+  assert.deepEqual(await page.locator('#map-container g[data-region]').evaluateAll((nodes) => [...new Set(nodes.map((node) => node.getAttribute('fill')))]), ['#4caf50']);
   assert.equal(await visibleTotal(page), new Intl.NumberFormat('id-ID').format(model.total));
   assert.equal(await page.locator('#map-container [tabindex="0"]').count(), 34);
   await screenshot(page, 'desktop.png');
@@ -74,16 +74,50 @@ const visibleTotal = async (page) => page.locator('#map-container [tabindex="0"]
   await page.locator('[data-category="high"]').click();
   assert.equal(await page.locator('#province_piece_049').getAttribute('fill'), '#a71923');
   assert.equal(await page.locator('#preview-mode').inputValue(), 'color');
-  await page.selectOption('#preview-mode', 'blue');
-  assert.equal(await page.locator('#province_piece_049').getAttribute('fill'), '#ADC3DA');
+  await page.selectOption('#preview-mode', 'green');
+  assert.equal(await page.locator('#province_piece_049').getAttribute('fill'), '#4caf50');
   assert.equal(await visibleTotal(page), '41');
   await page.selectOption('#preview-mode', 'color');
   assert.equal(await page.locator('#province_piece_049').getAttribute('fill'), '#a71923');
-  assert.equal(await page.locator('#province_piece_048').getAttribute('fill'), '#ADC3DA');
+  assert.equal(await page.locator('#province_piece_048').getAttribute('fill'), '#4caf50');
   assert.equal(await visibleTotal(page), '41');
   assert.equal(await page.locator('#map-container [tabindex="0"]').count(), 1);
   assert.equal(await page.locator('#map-popover').isVisible(), false);
 
+  await page.locator('#reset').click();
+
+  // Zero cases have their own category across totals, years, details, and information.
+  assert.equal(await page.locator('#legend-none').textContent(), '0 · Tidak ada');
+  assert.equal(await page.locator('#legend-low').textContent(), '1–19 · Rendah');
+  await page.locator('[data-category="none"]').click();
+  const zeroRegions = regions.filter((region) => region.cases === 0);
+  assert.ok(zeroRegions.length > 0);
+  assert.equal(await page.locator('#count-none').textContent(), String(zeroRegions.length));
+  assert.equal(await page.locator('#map-container [tabindex="0"]').count(), zeroRegions.length);
+  assert.equal(await page.locator('#preview-mode').inputValue(), 'color');
+  assert.equal(await visibleTotal(page), '0');
+  for (const region of zeroRegions) {
+    for (const piece of region.pieces) {
+      const node = page.locator(`#province_piece_${String(piece).padStart(3, '0')}`);
+      assert.equal(await node.getAttribute('fill'), '#4caf50');
+      await node.dispatchEvent('click');
+      assert.equal(await page.locator('#popover-total').textContent(), '0');
+      assert.equal(await page.locator('#popover-category').textContent(), 'Tidak ada');
+      assert.equal(await page.locator('#popover-category .dot').getAttribute('class'), 'dot green');
+    }
+  }
+  await page.locator('[data-category="low"]').click();
+  assert.equal(await page.locator('#province_piece_040').getAttribute('tabindex'), '-1');
+  await page.locator('[data-category="none"]').click();
+  await page.selectOption('#year-filter', '2024');
+  assert.equal(await page.locator('#province_piece_039').getAttribute('tabindex'), '0');
+  assert.equal(await page.locator('#province_piece_039').getAttribute('fill'), '#4caf50');
+  await page.selectOption('#year-filter', '2025');
+  assert.equal(await page.locator('#province_piece_039').getAttribute('tabindex'), '-1');
+  await page.selectOption('#island-filter', 'Sulawesi');
+  await page.locator('#open-information').click();
+  assert.equal(await page.locator('#information-body .empty-table').isVisible(), true);
+  await page.locator('#close-information').click();
   await page.locator('#reset').click();
 
   // The year filter changes counts, category membership, details together.
@@ -94,7 +128,7 @@ const visibleTotal = async (page) => page.locator('#map-container [tabindex="0"]
   await page.selectOption('#year-filter', '2025');
   const annualTotal = regions.reduce((sum, region) => sum + region.casesByYear[2025], 0);
   assert.equal(await visibleTotal(page), String(annualTotal));
-  assert.equal(await page.locator('#province_piece_049').getAttribute('fill'), '#ADC3DA');
+  assert.equal(await page.locator('#province_piece_049').getAttribute('fill'), '#4caf50');
   await page.locator('#province_piece_049 .province-fill').click();
   assert.equal(await page.locator('#popover-total').textContent(), '19');
   assert.equal(await page.locator('#popover-period').textContent(), 'Tahun 2025');
@@ -105,9 +139,9 @@ const visibleTotal = async (page) => page.locator('#map-container [tabindex="0"]
   assert.equal(await page.locator('#map-container [tabindex="0"]').count(), 0);
   await page.locator('#reset').click();
   assert.equal(await page.locator('#year-filter').inputValue(), 'all');
-  assert.equal(await page.locator('#preview-mode').inputValue(), 'blue');
-  assert.equal(await page.locator('#province_piece_049').getAttribute('fill'), '#ADC3DA');
-  assert.equal(await visibleTotal(page), '824');
+  assert.equal(await page.locator('#preview-mode').inputValue(), 'green');
+  assert.equal(await page.locator('#province_piece_049').getAttribute('fill'), '#4caf50');
+  assert.equal(await visibleTotal(page), new Intl.NumberFormat('id-ID').format(model.total));
 
   for (const year of ['2023', '2024']) {
     await page.selectOption('#year-filter', year);
@@ -172,7 +206,7 @@ const visibleTotal = async (page) => page.locator('#map-container [tabindex="0"]
   assert.equal(await page.locator('#information-body tr').count(), sumatera.reduce((sum, region) => sum + region.cases, 0));
   assert.equal(await page.locator('#information-body .photo-placeholder').count(), await page.locator('#information-body tr').count());
   const informationRegions = await page.locator('#information-body tr').evaluateAll((rows) => [...new Set(rows.map((row) => row.dataset.region))]);
-  assert.deepEqual(informationRegions.sort(), sumatera.map((region) => region.id).sort());
+  assert.deepEqual(informationRegions.sort(), sumatera.filter((region) => region.cases > 0).map((region) => region.id).sort());
   await screenshot(page, 'information-desktop.png');
   await page.keyboard.press('Escape');
   assert.equal(await page.locator('#information-dialog').isVisible(), false);
@@ -205,8 +239,8 @@ const visibleTotal = async (page) => page.locator('#map-container [tabindex="0"]
   await screenshot(mobile, 'mobile.png');
   await mobile.selectOption('#preview-mode', 'color');
   assert.equal(await mobile.locator('#province_piece_049').getAttribute('fill'), '#a71923');
-  await mobile.selectOption('#preview-mode', 'blue');
-  assert.equal(await mobile.locator('#province_piece_049').getAttribute('fill'), '#ADC3DA');
+  await mobile.selectOption('#preview-mode', 'green');
+  assert.equal(await mobile.locator('#province_piece_049').getAttribute('fill'), '#4caf50');
   await mobile.selectOption('#year-filter', '2025');
   assert.equal(await visibleTotal(mobile), String(annualTotal));
   assert.equal(await mobile.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);

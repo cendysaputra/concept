@@ -2,7 +2,7 @@
   "name": "maps-rubrik",
   "version": "1.0.0",
   "private": true,
-  "description": "Model peta SVG interaktif dengan tiga kategori jumlah perkara",
+  "description": "Model peta SVG interaktif dengan empat kategori jumlah perkara",
   "scripts": {
     "dev": "node tools/serve.mjs",
     "start": "node tools/serve.mjs",

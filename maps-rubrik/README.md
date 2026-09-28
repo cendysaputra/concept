@@ -15,12 +15,12 @@ Buka melalui server lokal agar browser dapat membaca SVG.
 - Klik atau sentuh provinsi untuk menampilkan nama daerah, jumlah perkara, dan kategorinya.
 - Tombol Informasi muncul setelah memilih kelompok wilayah. Tombol ini membuka popup berisi foto placeholder, nama, jabatan, dan tahun. Daftar mengikuti wilayah, tahun, dan kategori aktif. Tooltip hover dan popup singkat saat klik provinsi tetap tersedia.
 - Semua potongan pulau yang termasuk provinsi yang sama memiliki warna dan detail yang sama.
-- Filter Preview di sebelah Semua kategori menyediakan pilihan Biru (`#ADC3DA`) dan Warna (warna masing-masing kategori). Filter ini mengubah warna tampilan tanpa mengubah data, wilayah, atau tahun.
-- Memilih Tinggi, Sedang, atau Rendah otomatis mengaktifkan preview Warna untuk kategori tersebut. Memilih Semua kategori mengikuti mode preview yang aktif. Tombol reset mengembalikan preview Biru.
-- Merah: 30 perkara atau lebih; oranye: 20–29; kuning: 0–19.
+- Filter Preview di sebelah Semua kategori menyediakan pilihan Normal (warna default peta) dan Kategori (warna masing-masing kategori). Filter ini mengubah warna tampilan tanpa mengubah data, wilayah, atau tahun.
+- Memilih Tinggi, Sedang, Rendah, atau Tidak ada otomatis mengaktifkan preview Kategori untuk kategori tersebut. Memilih Semua kategori mengikuti mode preview yang aktif. Tombol reset mengembalikan preview Normal.
+- Merah: 30 perkara atau lebih; oranye: 20–29; kuning: 1–19; hijau: 0 perkara (Tidak ada).
 - Filter kategori dan kelompok wilayah memperbarui peta serta tabel. Memilih kelompok wilayah hanya menampilkan peta wilayah tersebut dan memperbesar tampilannya; semua kelompok wilayah lainnya disembunyikan. Pilihan Semua wilayah menampilkan kembali seluruh peta.
 - Saat kelompok wilayah tertentu dipilih, panah kiri dan kanan pada peta berpindah antarwilayah mengikuti urutan dropdown. Dari Papua, panah kanan kembali ke Sumatera. Filter tahun dan kategori tetap mengikuti pilihan sebelumnya.
-- Filter tahun di sebelah filter wilayah memperbarui jumlah perkara, warna kategori, detail daerah, dan popup Informasi. Pilihan Semua tahun menjumlahkan data semua tahun yang tersedia. Model ini menyediakan data contoh tahun 2023, 2024, dan 2025.
+- Filter tahun di sebelah filter wilayah memperbarui jumlah perkara, warna kategori, detail daerah, dan popup Informasi. Pilihan Semua tahun menjumlahkan data semua tahun yang tersedia. Model ini menyediakan data contoh tahun 2023, 2024, dan 2025, termasuk provinsi dengan 0 perkara. Tampilan awal memakai warna hijau untuk seluruh peta.
 - Gunakan Tab untuk menavigasi provinsi, Enter/Space untuk membuka detail, dan Escape untuk menutupnya.
 - Tombol reset mengembalikan peta dan filter ke tampilan awal.
 
@@ -36,7 +36,7 @@ Popup Informasi menggunakan `MAP_DATA.information`. Untuk preview, array ini dib
 
 ## Verifikasi browser
 
-`npm run check` memeriksa 92 potongan SVG, detail 34 provinsi, preview Biru/Warna, filter, akses keyboard, popup Informasi, dan tampilan ponsel. Skrip ini membutuhkan Playwright dan Google Chrome yang tersedia di lingkungan pengujian. Server lokal harus berjalan terlebih dahulu. Gunakan variabel lingkungan `PREVIEW_URL` untuk menguji alamat lain, misalnya alamat Herd.
+`npm run check` memeriksa 92 potongan SVG, detail 34 provinsi, preview Normal/Kategori, filter, akses keyboard, popup Informasi, dan tampilan ponsel. Skrip ini membutuhkan Playwright dan Google Chrome yang tersedia di lingkungan pengujian. Server lokal harus berjalan terlebih dahulu. Gunakan variabel lingkungan `PREVIEW_URL` untuk menguji alamat lain, misalnya alamat Herd.
 
 Pengujian tidak membuat file screenshot secara default. Untuk menyimpannya, tentukan folder tujuan melalui variabel lingkungan `SCREENSHOTS_DIR`.
 

@@ -4,12 +4,13 @@
   const data = window.MAP_DATA;
   const $ = (id) => document.getElementById(id);
   const format = new Intl.NumberFormat('id-ID');
-  const colors = { high: '#a71923', medium: '#ed8031', low: '#ffc52b' };
-  const labels = { high: 'Tinggi', medium: 'Sedang', low: 'Rendah' };
+  const colors = { high: '#a71923', medium: '#ed8031', low: '#ffc52b', none: '#4caf50' };
+  const labels = { high: 'Tinggi', medium: 'Sedang', low: 'Rendah', none: 'Tidak ada' };
+  const dotColors = { high: 'red', medium: 'orange', low: 'yellow', none: 'green' };
   const pieceToRegion = new Map();
   const nodesByRegion = new Map();
   const islands = [...$('island-filter').options].map((option) => option.value).filter((value) => value !== 'all');
-  const state = { island: 'all', year: 'all', category: 'all', preview: 'blue', selected: null, hovered: null };
+  const state = { island: 'all', year: 'all', category: 'all', preview: 'green', selected: null, hovered: null };
   let map;
   let resizeFrame;
   let regionAnimation = null;
@@ -19,8 +20,8 @@
   const years = [...new Set(data.regions.flatMap((region) => Object.keys(region.casesByYear)))].sort((a, b) => Number(b) - Number(a));
   const casesOf = (region) => state.year === 'all' ? Object.values(region.casesByYear).reduce((sum, count) => sum + count, 0) : region.casesByYear[state.year] ?? 0;
   const periodLabel = () => state.year === 'all' ? 'Semua tahun' : `Tahun ${state.year}`;
-  const categoryOf = (region) => casesOf(region) >= data.thresholds.high ? 'high' : casesOf(region) >= data.thresholds.medium ? 'medium' : 'low';
-  const colorOf = (region) => state.preview === 'color' && (state.category === 'all' || categoryOf(region) === state.category) ? colors[categoryOf(region)] : '#ADC3DA';
+  const categoryOf = (region) => casesOf(region) === 0 ? 'none' : casesOf(region) >= data.thresholds.high ? 'high' : casesOf(region) >= data.thresholds.medium ? 'medium' : 'low';
+  const colorOf = (region) => state.preview === 'color' && (state.category === 'all' || categoryOf(region) === state.category) ? colors[categoryOf(region)] : colors.none;
   const inIsland = (region) => state.island === 'all' || region.island === state.island;
   const isVisible = (region) => inIsland(region) && (state.category === 'all' || categoryOf(region) === state.category);
   const visibleRegions = () => data.regions.filter(isVisible);
@@ -39,7 +40,7 @@
     element.className = `category-tag ${category}`;
     element.replaceChildren();
     const dot = document.createElement('i');
-    dot.className = `dot ${category === 'high' ? 'red' : category === 'medium' ? 'orange' : 'yellow'}`;
+    dot.className = `dot ${dotColors[category]}`;
     element.append(dot, document.createTextNode(`${labels[category]}`));
   }
 
@@ -364,7 +365,8 @@
     }
   }
 
-  $('legend-low').textContent = `0–${data.thresholds.medium - 1} · Rendah`;
+  $('legend-none').textContent = '0 · Tidak ada';
+  $('legend-low').textContent = `1–${data.thresholds.medium - 1} · Rendah`;
   $('legend-medium').textContent = `${data.thresholds.medium}–${data.thresholds.high - 1} · Sedang`;
   $('legend-high').textContent = `≥ ${data.thresholds.high} · Tinggi`;
 
@@ -414,7 +416,7 @@
     state.island = 'all';
     state.year = 'all';
     state.category = 'all';
-    state.preview = 'blue';
+    state.preview = 'green';
     $('island-filter').value = 'all';
     $('year-filter').value = 'all';
     changeFilters();
