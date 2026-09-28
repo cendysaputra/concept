@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#a71923" />
+    <title>Peta Perkara Indonesia — TPK Wilayah</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="data.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="map-card" aria-labelledby="map-heading">
+        <div class="map-toolbar"><div><h2 id="map-heading">Sebaran Wilayah</h2><p id="map-subtitle" aria-live="polite">Seluruh wilayah Indonesia</p></div><div class="toolbar-actions"><label class="select-wrap"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 6 6-2 6 3 6-2v15l-6 2-6-3-6 2Z M9 4v15 M15 7v15"/></svg><span class="sr-only">Pilih kelompok wilayah</span><select id="island-filter"><option value="all">Semua wilayah</option><option>Sumatera</option><option>Jawa</option><option>Kalimantan</option><option>Sulawesi</option><option>Bali & Nusa Tenggara</option><option>Maluku</option><option>Papua</option></select></label><label class="select-wrap year-select-wrap"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 11h18"/></svg><span class="sr-only">Pilih tahun perkara</span><select id="year-filter"><option value="all">Semua tahun</option></select></label><button type="button" class="information-button" id="open-information" aria-haspopup="dialog" aria-controls="information-dialog" aria-expanded="false" hidden><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7v1"/></svg>Informasi</button><button class="icon-button" id="reset" title="Reset tampilan" aria-label="Reset tampilan"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 8M4 4v6h6"/></svg></button></div></div>
+        <div class="map-options">
+          <div class="category-filters" aria-label="Filter kategori">
+            <button class="category-button active" data-category="all" aria-pressed="true">Semua kategori</button>
+            <label class="preview-select-wrap"><span class="sr-only">Mode preview peta</span><select id="preview-mode"><option value="blue">Preview: Biru</option><option value="color">Preview: Warna</option></select></label>
+            <div class="category-levels">
+              <button class="category-button" data-category="high" aria-pressed="false"><span class="dot red"></span> Tinggi <span class="category-count" id="count-high"></span></button>
+              <button class="category-button" data-category="medium" aria-pressed="false"><span class="dot orange"></span> Sedang <span class="category-count" id="count-medium"></span></button>
+              <button class="category-button" data-category="low" aria-pressed="false"><span class="dot yellow"></span> Rendah <span class="category-count" id="count-low"></span></button>
+            </div>
+          </div>
+        </div>
+        <div class="map-stage" id="map-stage"><button type="button" id="previous-region" class="map-region-arrow previous" aria-label="Wilayah sebelumnya" hidden><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button><button type="button" id="next-region" class="map-region-arrow next" aria-label="Wilayah berikutnya" hidden><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button><div id="map-container" aria-busy="true"><div class="loading">Memuat peta Indonesia…</div></div><div class="map-tooltip" id="hover-tooltip" role="tooltip" hidden></div><div class="map-popover" id="map-popover" aria-live="polite" hidden><button id="close-popover" class="popover-close" aria-label="Tutup detail wilayah">×</button><span class="popover-eyebrow">DETAIL WILAYAH</span><h3 id="popover-name"></h3><p id="popover-period" class="popover-period"></p><div class="popover-number"><strong id="popover-total"></strong><span>perkara</span></div><div class="popover-footer"><span class="category-tag" id="popover-category"></span><span>Data contoh</span></div></div></div>
+        <div class="map-footer"><div class="legend"><span class="legend-title">Jumlah</span><span><i class="dot yellow"></i><span id="legend-low">0–19 · Rendah</span></span><span><i class="dot orange"></i><span id="legend-medium">20–29 · Sedang</span></span><span><i class="dot red"></i><span id="legend-high">≥ 30 · Tinggi</span></span></div></div>
+      </section>
+
+    </main>
+
+    <dialog id="information-dialog" aria-labelledby="information-title" aria-describedby="information-scope"><div class="dialog-header"><div><span class="eyebrow">INFORMASI WILAYAH</span><h2 id="information-title">Informasi wilayah</h2><p id="information-scope"></p></div><button type="button" id="close-information" class="icon-button" aria-label="Tutup informasi wilayah">&times;</button></div><div class="information-scroll" tabindex="0" role="region" aria-label="Daftar informasi wilayah"><table class="information-table"><thead><tr><th scope="col">Foto</th><th scope="col">Nama</th><th scope="col">Jabatan</th><th scope="col">Tahun</th></tr></thead><tbody id="information-body"></tbody></table></div></dialog>
+  </body>
+</html>
